@@ -1,0 +1,164 @@
+.container{
+    position: fixed;
+    height: 5vh;
+    width: 100%;
+}
+.container .items{
+    margin:1.5% 0 0 55%;
+}
+.container .items .item{
+    margin-left:6%;
+    font-size: 1.3rem;
+    font-weight: 600; 
+    position: relative;
+}
+.container .items .item::before{
+    position: absolute;
+    content: '';
+    top: -18px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: var(--main--gray);
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+.container .items .item:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.container .items .clicked::before{
+    position: absolute;
+    content: '';
+    top: -18px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: var(--main--gray);
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform .3s ease-in-out;
+} 
+.container .items .notclicked{
+    color: var(--white);  
+}
+.container .items .icon{
+    position: absolute;
+    right: 1%;
+    font-size: 2.5rem;
+}
+.container .items .lightIcon{
+    position: absolute;
+    right: 8%;
+    top: 20px;
+    color: var(---white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+.container .items .darkIcon{
+    position: absolute;
+    right: 8%;
+    top: 20px;
+    color: var(--dark--gray);
+    font-size:2rem;
+    cursor: pointer;
+}
+.container .notActiveSideBar{
+    width: 100px;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    list-style-type: none;
+    left: -100%;
+    transition: 0.5s all ease-out;
+}
+.sidebar{
+    width: 100px;
+    height: 52.5vh;
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    left: 0;
+    list-style-type: none;
+    transition: 0.5s all ease-in;
+}
+.sidebar  li{
+    list-style-type: none;
+    font-size: 1.8rem;
+    padding: 30px 30px 30px 10%;
+    border-bottom:1px solid var(--main--gray);
+}
+.activeSideBar{
+    left: 0;
+}
+.active{
+    color: var(--active--color);
+}
+.logoContainer{
+    position: absolute;
+    top: -10px;
+    left: 120px;
+}
+.logoContainer span{
+    position: absolute;
+    width: 200px;
+    top: 28px;
+    left:88px;
+    font-size: 1.3rem;
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+.logoContainer .logo{
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+@media (max-width:1280px){
+    .container .items .lightIcon{
+        top: 10px;
+        right: 50%;
+        font-size: 2.5rem;
+    } 
+    .container .items .darkIcon{
+        top: 10px;
+        right: 50%;
+        font-size: 2.5rem;
+    }
+    .logoContainer{
+        top: -12.5px;
+        left: -26.5px;
+    }
+    .logoContainer span{
+        display: none;
+    }
+}
+@media (max-width:280px){
+    .container .items .icon{
+        position: sticky;
+        margin-left: 70%;
+        font-size: 2rem;
+    }
+    .container .items .lightIcon{
+        top: 5px;
+        right: 50%;
+        font-size: 2rem;
+    } 
+    .container .items .darkIcon{
+        top:5px;
+        right: 50%;
+        font-size: 2rem;
+    }
+    .logoContainer .logo{
+        top: -2px;
+        left: 2px;
+        width: 90px;
+        height: 80px;
+    }
+}
+
+
+

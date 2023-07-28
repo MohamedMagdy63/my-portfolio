@@ -38,6 +38,15 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  /* /////////////////////Colors variabels////////////////// */
+  /* Main colors */
+  --main--gray:#95afc0;
+  --white:#fff;
+  --black:#000;
+  --dark--gray:#1e272e;
+  /* Navbar */
+  --active--color:#68abd8;
 }
 
 @media (prefers-color-scheme: dark) {
