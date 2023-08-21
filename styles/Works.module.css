@@ -1,0 +1,159 @@
+.container {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    height: 80vh;
+}
+.boxStyle{
+    border-radius: 35px;
+    background-color: inherit;
+    overflow: hidden;
+    background-color: #5a575711;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+}
+.container .startBox {
+    position: relative;
+    margin-left: 12vw;
+    width: 27vw;
+    height: 44vh; 
+}
+.container .summery{
+    position: absolute;
+    top: 0;
+    left: 36vw;
+}
+.container .summery h1{
+    font-family: Arial, sans-serif;
+    text-transform:uppercase;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    margin-left: 7.5vw;
+}
+.container .summery h1 .star{
+    color: #BCBCBC;
+    opacity: 0.3;
+}
+.container .project1 {
+    position: absolute;
+    top: 10.5vh;
+    left: 40.5vw;
+    width: 22.5vw;
+    height: 44vh; 
+}
+.container .project2{
+    position: absolute;
+    top: 10.5vh;
+    left: 64.5vw;
+    width: 22.5vw;
+    height: 44vh; 
+}
+
+.container .project3{
+    position: absolute;
+    top: 47vh;
+    left: 12vw;
+    width: 27vw;
+    height: 55vh; 
+}
+
+.container .project4{
+    position: absolute;
+    top: 58vh;
+    left: 40.5vw;
+    width: 22.5vw;
+    height: 44vh;
+}
+.container .project5{
+    position: absolute;
+    top: 58vh;
+    left: 64.5vw;
+    width: 22.5vw;
+    height: 44vh;
+}
+.container .project6{
+    position: absolute;
+    top: 104vh;
+    left: 12vw;
+    width: 27vw;
+    height: 44vh;
+}
+.container .project7{
+    position: absolute;
+    top: 104vh;
+    left: 40.5vw;
+    width: 22.5vw;
+    height: 44vh;
+}
+
+.container .project8{
+    position: absolute;
+    top: 104vh;
+    left: 64.5vw;
+    width: 22.5vw;
+    height: 44vh;
+}
+.box{
+    margin: 5%;
+    width: 90%;
+    height: 75%;
+    border-radius: 35px;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.container h3{
+    margin: 5% 5% 0 5%;
+    font-family: Arial, sans-serif;
+    text-transform:capitalize;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+.container .arrow{
+    margin: -10% 0 0 80%;
+    font-size: 3rem;
+    opacity: 0.2;
+}
+.startBox:hover .arrow{
+    opacity: 1;
+    transition: all 1s ease;
+}
+.project1:hover .arrow{
+    opacity: 1;
+    transition: all 1s ease;
+}
+.project2:hover .arrow{
+    opacity: 1;
+    transition: all 1s ease;
+}
+.project3:hover .arrow{
+    opacity: 1;
+    transition: all 1s ease;
+}
+.project4:hover .arrow{
+    opacity: 1;
+    transition: all 1s ease;
+}
+.project5:hover .arrow{
+    opacity: 1;
+    transition: all 1s ease;
+}
+.project6:hover .arrow{
+    opacity: 1;
+    transition: all 1s ease;
+}
+.project7:hover .arrow{
+    opacity: 1;
+    transition: all 1s ease;
+}
+.project8:hover .arrow{
+    opacity: 1;
+    transition: all 1s ease;
+}
+.box .img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit:contain;
+}

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import * as Icons2 from "react-icons/fa";
 import * as Icons3 from "react-icons/md";
 import * as Icons4 from "react-icons/bs";
-import logo from "../public/logo-4.png";
+import logo from "../public/logo.png";
 import Image from 'next/image';
 export default function Navbar() {
     const [windowWidth, setWindowWidth] = useState(null);
@@ -109,8 +109,8 @@ export default function Navbar() {
           </Link>
         </div>
         {
-          <div className={style.sidebar}>
-            <ul className={sidebar ? style.activeSideBar : style.notActiveSideBar}>
+          <div>
+            <ul className={sidebar ? style.activeSideBar && style.sidebar : style.notActiveSideBar}>
               {
                 linksArray.map(({name , link})=>(
                   <Link

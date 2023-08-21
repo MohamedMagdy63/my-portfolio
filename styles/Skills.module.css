@@ -1,0 +1,381 @@
+.title{
+    margin: 2vh 0 0 42.5vw;
+    letter-spacing: 0.3px;
+    font-family: Arial, sans-serif;
+}
+.title p{
+    padding: 2vh;
+    font-size: 1.2rem;
+    color: #BCBCBC;
+}
+.title h1{
+    margin-left: -35px;
+    font-size: 3.2rem;
+}
+.taps{
+    position: relative;
+    margin: 2vh 15vh;
+}
+.taps .tap{
+    width: 21vw;
+    height: 10vh;
+    font-size: 1.3rem;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.edu{
+    width: 84vw;
+    margin-left: 8vw;
+    height: fit-content;
+}
+.edu .container{
+    width: 35vw;
+    height: 40vh; 
+}
+.edu .container .component .partV{
+    position: absolute;
+    top: 38.9vh;
+    left: 8vw;
+    width: 0.1vw;
+    height: 5.7vh;
+    background-color: #5a57572b;
+    border: 3px  solid rgba(255, 255, 255, 0.091);
+}
+.edu .container .component .circle{
+    position: absolute;
+    top: 44.6vh;
+    left: 7.6vw;
+    width: 1vw;
+    height: 2vh;
+    border-radius: 50%;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container .component .line{
+    position: absolute;
+    top: 46.6vh;
+    left: 8vw;
+    width: 0.1vw;
+    height: 45vh;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container .component .linePlus{
+    position: absolute;
+    top: 46.6vh;
+    left: 8vw;
+    width: 0.1vw;
+    height: 35vh;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container .component .partH{
+    position: absolute;
+    top: 45.2vh;
+    left: 8.6vw;
+    width:  4vw;
+    height:0.1vh ;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container .box{
+    position: absolute;
+    top: 40vh;
+    left: 12.6vw;
+    width: 35vw;
+    height: 40vh;
+    background-color: #5a57572b;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+    overflow: hidden;
+}
+.edu .container:hover .box:before {
+    position: absolute;
+    content: '';
+    top: 0; /* Adjust the position of the shadow */
+    left: 4%; /* Adjust the position of the shadow */
+    width: 120%; /* Make the shadow wider than the box */
+    height: 100%; /* Keep the shadow height the same as the box */
+    background: linear-gradient(to right, transparent, rgba(255, 253, 253, 0.2)); /* Use a linear gradient for shadow effect */
+    transform: skewX(-20deg); /* Apply skew for a diagonal shadow effect */
+    z-index: -1; /* Place the shadow behind the box */
+}
+.data{
+    width: 80%;
+    height: 80%;
+    margin: 6% 10%;
+    color: #BCBCBC;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.3px;
+}
+.data h3{
+    margin-bottom: 3vh;
+    color: #ffffff;
+}
+.data p{
+    margin-top: 3vh;
+}
+.edu .container:hover .component .circle {
+    background-color: #BCBCBC;
+}
+.edu .container2 .component .circle{
+    position: absolute;
+    top: 91.6vh;
+    left: 7.6vw;
+    width: 1vw;
+    height: 2vh;
+    border-radius: 50%;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container2 .component .line{
+    position: absolute;
+    top: 93.5vh;
+    left: 8vw;
+    width: 0.1vw;
+    height: 33vh;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container2 .component .partH{
+    position: absolute;
+    top: 92.2vh;
+    left: 8.6vw;
+    width:  4vw;
+    height:0.1vh ;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container2 .box{
+    position: absolute;
+    top: 86vh;
+    left: 12.6vw;
+    width: 35vw;
+    height: 40vh;
+    background-color: #5a57572b;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+    overflow: hidden;
+}
+.edu .container2:hover .box:before {
+    position: absolute;
+    content: '';
+    top: 0; /* Adjust the position of the shadow */
+    left: 4%; /* Adjust the position of the shadow */
+    width: 120%; /* Make the shadow wider than the box */
+    height: 100%; /* Keep the shadow height the same as the box */
+    background: linear-gradient(to right, transparent, rgba(255, 253, 253, 0.2)); /* Use a linear gradient for shadow effect */
+    transform: skewX(-20deg); /* Apply skew for a diagonal shadow effect */
+    z-index: -1; /* Place the shadow behind the box */
+}
+
+.edu .container2:hover .component .circle {
+    background-color: #BCBCBC;
+}
+
+
+/* //////////////////////// */
+
+.edu .container3 .component .partV{
+    position: absolute;
+    top: 38.9vh;
+    left: 51.3vw;
+    width: 0.1vw;
+    height: 5.7vh;
+    background-color: #5a57572b;
+    border: 3px  solid rgba(255, 255, 255, 0.091);
+}
+.edu .container3 .component .circle{
+    position: absolute;
+    top: 44.6vh;
+    left: 51vw;
+    width: 1vw;
+    height: 2vh;
+    border-radius: 50%;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container3 .component .line{
+    position: absolute;
+    top: 46.6vh;
+    left: 51.3vw;
+    width: 0.1vw;
+    height: 45vh;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+
+.edu .container3 .component .line{
+    position: absolute;
+    top: 46.6vh;
+    left: 51.3vw;
+    width: 0.1vw;
+    height: 45vh;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container3 .component .linePlus{
+    position: absolute;
+    top: 46.6vh;
+    left: 51.3vw;
+    width: 0.1vw;
+    height: 35vh;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container3 .component .partH{
+    position: absolute;
+    top: 45.3vh;
+    left: 52vw;
+    width:  4vw;
+    height:0.1vh ;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container3 .box{
+    position: absolute;
+    top: 40vh;
+    left: 56vw;
+    width: 35vw;
+    height: 40vh;
+    background-color: #5a57572b;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+    overflow: hidden;
+}
+.edu .container3:hover .box:before {
+    position: absolute;
+    content: '';
+    top: 0; /* Adjust the position of the shadow */
+    left: 4%; /* Adjust the position of the shadow */
+    width: 120%; /* Make the shadow wider than the box */
+    height: 100%; /* Keep the shadow height the same as the box */
+    background: linear-gradient(to right, transparent, rgba(255, 253, 253, 0.2)); /* Use a linear gradient for shadow effect */
+    transform: skewX(-20deg); /* Apply skew for a diagonal shadow effect */
+    z-index: -1; /* Place the shadow behind the box */
+}
+
+.edu .container3:hover .component .circle {
+    background-color: #BCBCBC;
+}
+/* //////////////// */
+
+.edu .container4 .component .circle{
+    position: absolute;
+    top: 91.5vh;
+    left: 51vw;
+    width: 1vw;
+    height: 2vh;
+    border-radius: 50%;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container4 .component .line{
+    position: absolute;
+    left: 51.3vw;
+    width: 0.1vw;
+    top:93.5vh;
+    height: 33vh;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container4 .component .partH{
+    position: absolute;
+    left: 52vw;
+    top:92.2vh;
+    width:  4vw;
+    height:0.1vh ;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container4 .box{
+    position: absolute;
+    top: 86vh;
+    left: 56vw;
+    width: 35vw;
+    height: 40vh;
+    background-color: #5a57572b;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+    overflow: hidden;
+}
+.edu .container4:hover .box:before {
+    position: absolute;
+    content: '';
+    top: 0; /* Adjust the position of the shadow */
+    left: 4%; /* Adjust the position of the shadow */
+    width: 120%; /* Make the shadow wider than the box */
+    height: 100%; /* Keep the shadow height the same as the box */
+    background: linear-gradient(to right, transparent, rgba(255, 253, 253, 0.2)); /* Use a linear gradient for shadow effect */
+    transform: skewX(-20deg); /* Apply skew for a diagonal shadow effect */
+    z-index: -1; /* Place the shadow behind the box */
+}
+
+.edu .container4:hover .component .circle {
+    background-color: #BCBCBC;
+}
+/* /////////////// */
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left:8% ;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+.grid .right{
+    width: 40vw;
+    height: fit-content;
+    background-color: #5a57572b;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+}
+.grid .left{
+    width: 40vw;
+    height: fit-content;
+    margin-left: -5vw;
+    background-color: #5a57572b;
+    border: 0.5px solid rgba(255, 255, 255, 0.091); 
+}
+.grid h1{
+    margin: 2vh;
+    color: #BCBCBC;
+}
+.grid  .line{
+    margin: 1.5vh 0 1.5vh 2vh;
+    width: 95%;
+}
+.grid p{
+    margin-left: 2vh;
+}
+
+.certifcate{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 6vw;
+}
+.certifcate .box{
+    position: relative;
+    margin: 2vh 0 5vh 0;
+    width: 26vw;
+    height: 50vh;
+    border-radius: 35px;
+    background-color: #5a57572b;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+    overflow: hidden;
+}
+.certifcate .box:hover {
+    box-shadow: 
+    0px 10px 20px rgba(255, 255, 255, 0.1),
+    0px 20px 40px rgba(255, 255, 255, 0.1),
+    0px 30px 60px rgba(255, 255, 255, 0.1);
+}
+.certifcate .box .imgBox{
+    margin: 7.5%;
+    width: 85%;
+    height: 85%;
+}
+.certifcate .box .imgBox .img{
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+}
+.img:hover{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+    transition: 1s all ease;
+}

@@ -1,5 +1,4 @@
 .container{
-    position: fixed;
     height: 5vh;
     width: 100%;
 }
@@ -77,13 +76,15 @@
 }
 .sidebar{
     width: 100px;
-    height: 52.5vh;
+    height: fit-content;
     position: absolute;
     width: 100%;
     top: 10vh;
     left: 0;
     list-style-type: none;
     transition: 0.5s all ease-in;
+    z-index: 999;
+    background-color:var(--body);
 }
 .sidebar  li{
     list-style-type: none;
@@ -93,19 +94,20 @@
 }
 .activeSideBar{
     left: 0;
+    
 }
 .active{
     color: var(--active--color);
 }
 .logoContainer{
     position: absolute;
-    top: -10px;
+    top: 10px;
     left: 120px;
 }
 .logoContainer span{
     position: absolute;
     width: 200px;
-    top: 28px;
+    top: 10px;
     left:88px;
     font-size: 1.3rem;
     font-family: 'Satisfy', cursive;
@@ -114,8 +116,8 @@
 }
 .logoContainer .logo{
     position: relative;
-    width: 100px;
-    height: 90px;
+    width: 120px;
+    height: 80px;
 }
 @media (max-width:1280px){
     .container .items .lightIcon{
@@ -129,8 +131,8 @@
         font-size: 2.5rem;
     }
     .logoContainer{
-        top: -12.5px;
-        left: -26.5px;
+        top: -10px;
+        left: -39.5px;
     }
     .logoContainer span{
         display: none;
@@ -154,9 +156,6 @@
     }
     .logoContainer .logo{
         top: -2px;
-        left: 2px;
-        width: 90px;
-        height: 80px;
     }
 }
 

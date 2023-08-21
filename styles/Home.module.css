@@ -1,0 +1,671 @@
+.container {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    height: 80vh;
+}
+.boxStyle{
+    border-radius: 35px;
+    background-color: inherit;
+    overflow: hidden;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+}
+.container .boxStyle::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5a5757;
+    opacity: 0.1;
+}
+.container .startBox {
+    position: relative;
+    margin-left: 12%;
+    width: 35%;
+    height: 55%; 
+}
+.container .startBox .imgContainer{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.container .startBox .imgContainer .imageBox{
+    position: relative;
+    margin: 14% ;
+    border-radius: 25px 0 25px 0;
+    width: 75%;
+    height: 80%;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.container .startBox .imgContainer .imageBox .myImg{
+    width: 100%;
+    height: 100%;
+    
+}
+.container .startBox .dataContainer {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.3px;
+}
+.container .startBox  .dataContainer .title{
+    text-transform:uppercase;
+    color: #BCBCBC;
+    opacity: 0.7;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    margin-bottom: 3px;
+}
+.container .startBox .dataContainer .name{
+    margin-top: 10%;
+    font-size: 32px;
+    font-weight: 600;
+}
+.container .startBox .dataContainer .desc{
+    margin: 17% 3.5px 0 0;
+    color: #BCBCBC;
+}
+.container .startBox .dataContainer .arrow{
+    margin-left: 68%;
+    font-size: 3rem;
+    opacity: 0.2;
+}
+.container .startBox:hover .dataContainer .arrow {
+    opacity: 1;
+    transition: all 1s ease;
+}
+.container .moreAbout{
+    position: absolute;
+    top: 12%;
+    left: 49%;
+    width: 17.5%;
+    height: 42%;
+}
+.container .moreAbout .logoBox{
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+.container .moreAbout .logoBox img{
+    position: relative;
+    margin: -45px 0 0 -13%;
+    width: 130%;
+    height: 30vh;
+}
+.container .moreAbout .dataBox{
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.3px;
+    margin-left: 15px;
+}
+.container .moreAbout .dataBox p{
+    text-transform:uppercase;
+    color: #BCBCBC;
+    opacity: 0.7;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+.container .moreAbout .dataBox h3{
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 35px 0 0 0;
+
+}
+.container .moreAbout .dataBox .arrow{
+    margin: -13% 0 0 70%;
+    font-size: 3rem;
+    opacity: 0.2;
+}
+.container .moreAbout:hover .dataBox .arrow{
+    transition: all 1s ease;
+    opacity: 1;
+}
+.container .projects{
+    position: absolute;
+    top: 12%;
+    left: 69%;
+    width: 17.5%;
+    height: 42%;
+}
+.container .projects .logoBox{
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+.container .projects .logoBox img{
+    position: relative;
+    margin: -40px 0 0 10%;
+    width: 80%;
+    height: 220px;
+}
+.container .projects .dataBox{
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.3px;
+    margin-left: 15px;
+}
+.container .projects .dataBox p{
+    text-transform:uppercase;
+    color: #BCBCBC;
+    opacity: 0.7;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+.container .projects .dataBox h3{
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 35px 0 0 0;
+
+}
+.container .projects .dataBox .arrow{
+    margin: -13% 0 0 70%;
+    font-size: 3rem;
+    opacity: 0.2;
+}
+.container .projects:hover .dataBox .arrow{
+    opacity: 1;
+    transition: all 1s ease;
+}
+.container .newSletter{
+    position: absolute;
+    top: 0;
+    left: 49%;
+    width: 37%;
+    height: 8%;
+}
+.container .newSletter p {
+    width:100%;
+    padding-top: 15px;
+    font-size: 18px;
+    white-space: nowrap;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+    color: #BCBCBC;
+    letter-spacing: 0.3px;
+    margin-bottom: 3px;
+}
+.container .newSletter p span{
+    display:inline-block;
+    /* Apply animation to this element */
+    -webkit-animation: scrolling-left1 20s linear infinite;
+    animation: scrolling-left1 20s linear infinite;
+}
+.container .newSletter p span .star{
+    font-size:10px;
+}
+@keyframes scrolling-left1 {
+    0% {-webkit-transform: translateX(100%);
+        transform: translateX(130%);}
+      100% {-webkit-transform: translateX(-100%);
+          transform: translateX(-100%);}
+}
+@keyframes scrolling-left2 {
+    0% {-webkit-transform: translateX(0%);
+        transform: translateX(0%);}
+      100% {-webkit-transform: translateX(-100%);
+          transform: translateX(-100%);}
+}
+@keyframes scrolling-left3 {
+    0% {-webkit-transform: translateX(50%);
+        transform: translateX(50%);}
+      100% {-webkit-transform: translateX(-100%);
+          transform: translateX(-100%);}
+}
+@-webkit-keyframes scrolling-left1 {
+    0% {-webkit-transform: translateX(100%);}
+      100% {-webkit-transform: translateX(-100%);}
+}
+@-webkit-keyframes scrolling-left2 {
+    0% {-webkit-transform: translateX(0%);}
+      100% {-webkit-transform: translateX(-100%);}
+}
+
+.container .accounts{
+    position: absolute;
+    top: 48vh;
+    left: 12vw;
+    width: 17.5vw;
+    height: 42%;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+    background-color: #5a575714;
+    border-radius: 35px;
+}
+.container .accounts .box{
+    margin: 8%;
+    width: 85%;
+    height: 50%;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+    background-color: #5a575714;
+    border-radius: 35px;
+}
+.container .accounts .items {
+    display: grid;
+    grid-template-columns: auto auto; /* Split the container into two columns of equal width */
+}
+.container .accounts .items li{
+    margin: 18% 0 0 12.5%;
+    list-style: none;
+    width: 80px;
+    height: 10vh;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+    border-radius: 50%;
+    background-color: #5a575746;
+    flood-opacity:0.1;
+}
+.container .accounts .items .item:hover{
+    background-color: #ffffff;
+    opacity: 1;
+    transition: all 1s ease;
+}
+.container .accounts .items .item .icon{
+    font-size: 2.5rem;
+    margin: 25%;
+    color: #ffff;
+    opacity: 1;
+}
+.container .accounts .items .item:hover .icon{
+    color: #000000;
+    transition: all 1s ease;
+}
+.container .accounts .desc{
+    width: 100%;
+    height: 10vh;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.3px;
+    margin-left: 15px;
+}
+.container .accounts .desc p{
+    text-transform:uppercase;
+    color: #BCBCBC;
+    opacity: 0.7;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+.container .accounts .desc h3{
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 5px 0 0 0;
+
+}
+.container .accounts .desc .arrow{
+    margin: -13% 0 0 70%;
+    font-size: 3rem;
+    opacity: 0.2;
+}
+.container .accounts:hover .desc .arrow{
+    transition: all 1s ease;
+    opacity: 1;
+}
+.container .services{
+    position: absolute;
+    top: 60%;
+    left: 32%;
+    width: 35%;
+    height: 42%;
+}
+.container .services .top{
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+.container .services .top .icon{
+    font-size: 3rem;
+    margin: 30px 0 0 9.5%;
+}
+.container .services .down{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.3px;
+    margin-left: 15px;
+}
+.container .services .down p{
+    text-transform:uppercase;
+    color: #BCBCBC;
+    opacity: 0.7;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+.container .services .down h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 28px 0 0 0;
+}
+.container .services .down .arrow{
+    margin: -13% 0 0 81%;
+    font-size: 3rem;
+    opacity: 0.2;
+}
+.container .services:hover .down .arrow{
+    opacity: 1;
+    transition: all 1s ease;
+}
+.container .contact{
+    position: absolute;
+    top: 60%;
+    left: 69%;
+    width: 17.5%;
+    height: 42%;
+}
+.container .contact .line{
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    width: 2px;
+    opacity: 0.3;
+    height: 6vh;
+    background-color: #BCBCBC;
+}
+.container .contact .starLine{
+    position: absolute;
+    top: 5.7vh;
+    left: 34.5px;
+    font-size: 2rem;
+    opacity: 0.3;
+}
+.container .contact p{
+    font-size: 2rem;
+    margin: 18vh 0 0 1.5%;
+    font-weight: 600;
+}
+.container .contact p span{
+    font-weight: 600;
+    color: #54acf9;  /* fallback for old browsers */
+}
+.container .contact .arrow{
+    position: absolute;
+    top: 16vh;
+    left: 70%;
+    font-size: 3rem;
+    opacity: 0.2;
+}
+.container .contact:hover .arrow {
+    opacity: 1;
+    transition: all 1s ease;
+}
+@media (max-width:1311px) {
+    .container .services .top .icon{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:1252px) {
+    .container .moreAbout{
+        width: 37%;
+        height: 42%;
+    }
+    .container .projects{
+        top: 60%;
+        left: 12%;
+        width: 23.5%;
+        height: 38%;
+    }
+    .container .accounts{
+        top: 60%;
+        left: 37.5%;
+        width: 23.5%;
+        height: 38%;
+    }
+    .container .contact{
+        top: 60%;
+        left: 63.5%;
+        width: 23.5%;
+        height: 38%;
+    }
+    .container .services{
+        top: 103%;
+        left: 12%;
+        width: 75.5%;
+        height: 35%;
+    }
+    .container .services .top .icon{
+        font-size: 3.5rem;
+        margin: 30px 0 0 12%;
+    }
+}
+@media (max-width:1110px) {
+    .container .services .top .icon{
+        font-size: 3.5rem;
+        margin: 30px 0 0 11%;
+    }
+}
+@media (max-width:918px) {
+    .container .startBox {
+        margin-left: 12%;
+        width: 74%;
+        height: 55%; 
+    }
+    .container .newSletter{
+        top: 58%;
+        left: 12%;
+        width: 74%;
+        height: 8%;
+    }
+    .container .moreAbout{
+        top: 69%;
+        left: 12%;
+        width: 36%;
+        height: 42%;
+    }
+    .container .projects{
+        top: 69%;
+        left: 51%;
+        width: 36%;
+        height: 42%;
+    }
+    .container .accounts{
+        top: 114%;
+        left: 12%;
+        width: 36%;
+        height: 42%;
+    }
+    .container .contact{
+        top: 114%;
+        left: 51%;
+        width: 36%;
+        height: 42%;
+    }
+    .container .services{
+        top: 159%;
+        left: 12%;
+        width: 75.5%;
+        height: 35%;
+    }
+    .container .services .top .icon{
+        font-size: 3.5rem;
+        margin: 30px 0 0 9%;
+    }
+}
+@media (max-width:715px) {
+    .container .startBox {
+        margin-left: 12%;
+        width: 74%;
+        height: 74%; 
+    }
+    .container .startBox .imgContainer{
+        width: 80%;
+        height:60%;
+    }
+    .container .startBox .imgContainer .imageBox{
+       margin: 10% 0 50px 25%;
+    }
+    .container .startBox  .dataContainer .title{
+        margin: 120% 0 0 -90%;
+    }
+    .container .startBox .dataContainer .name{
+        margin: 10% 0 0 -90%;
+    }
+    .container .startBox .dataContainer .desc{
+        margin: 2% 0 0 -90%;
+    }
+    .container .startBox .dataContainer .arrow{
+        margin: 0 0 0 60%;
+        font-size: 3rem;
+        opacity: 0.2;
+    }
+    .container .startBox .dataContainer {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        font-family: Arial, sans-serif;
+        letter-spacing: 0.3px;
+    }
+    .container .newSletter{
+        top: 77%;
+        left: 12%;
+        width: 74%;
+        height: 8%;
+    }
+    .container .moreAbout{
+        top: 88%;
+        left: 12%;
+        width: 75%;
+        height: 42%;
+    }
+    .container .projects{
+        top: 133%;
+        left: 12%;
+        width: 75%;
+        height: 42%;
+    }
+    .container .accounts{
+        top: 178%;
+        left: 12%;
+        width: 75%;
+        height: 42%;
+    }
+    .container .accounts .items li{
+        width: 100px;
+        height: 12vh;
+    }
+    .container .accounts .items .item .icon{
+        font-size: 3rem;
+    }
+    .container .contact{
+        top: 223%;
+        left: 12%;
+        width: 74%;
+        height: 42%;
+    }
+    .container .services{
+        top: 268%;
+        left: 12%;
+        width: 75%;
+        height: 42%;
+    }
+    .container .services .top .icon{
+        font-size: 2.2rem;
+        margin: 30px 0 0 9%;
+    }
+   
+}
+@media (max-width:415px) {
+    .container .startBox {
+        margin-left: 12%;
+        width: 74%;
+        height: 74%; 
+    }
+    .container .startBox .imgContainer{
+        width: 85%;
+        height:65%;
+    }
+    .container .startBox .imgContainer .imageBox{
+       margin: 10% 0 50px 20%;
+    }
+    .container .startBox  .dataContainer .title{
+        margin: 140% 0 0 -90%;
+    }
+    .container .startBox .dataContainer .name{
+        margin: 10% 0 0 -90%;
+    }
+    .container .startBox .dataContainer .desc{
+        margin: 2% 0 0 -90%;
+    }
+    .container .startBox .dataContainer .arrow{
+        margin: 0 0 0 45%;
+        font-size: 3rem;
+        opacity: 0.2;
+    }
+    .container .startBox .dataContainer {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        font-family: Arial, sans-serif;
+        letter-spacing: 0.3px;
+    }
+    .container .newSletter{
+        top: 77%;
+        left: 12%;
+        width: 74%;
+        height: 8%;
+    }
+    .container .moreAbout{
+        top: 88%;
+        left: 12%;
+        width: 75%;
+        height: 42%;
+    }
+    .container .projects{
+        top: 133%;
+        left: 12%;
+        width: 75%;
+        height: 42%;
+    }
+    .container .accounts{
+        top: 178%;
+        left: 12%;
+        width: 75%;
+        height: 42%;
+    }
+    .container .accounts .items li{
+        width: 90px;
+        height: 12vh;
+    }
+    .container .accounts .items .item .icon{
+        font-size: 3rem;
+    }
+    .container .contact{
+        top: 223%;
+        left: 12%;
+        width: 74%;
+        height: 42%;
+    }
+    .container .contact .arrow{
+        top: 14vh;
+        left: 70%;
+    }
+    .container .contact p{
+        font-size: 2rem;
+        margin: 18vh 0 0 1.5%;
+        font-weight: 600;
+    }
+    .container .services{
+        top: 268%;
+        left: 12%;
+        width: 75%;
+        height: 42%;
+    }
+    .container .services .top .icon{
+        font-size: 2rem;
+        margin: 30px 0 0 7%;
+    }.container .contact p{
+        font-size: 2rem;
+        margin: 18vh 0 0 1.5%;
+        font-weight: 600;
+    }
+    .container .services .down .arrow{
+        margin: 0 0 0 70%;
+        font-size: 3rem;
+        opacity: 0.2;
+    }
+    .container .newSletter p span{
+        display:inline-block;
+        /* Apply animation to this element */
+        -webkit-animation: scrolling-left3 20s linear infinite;
+        animation: scrolling-left3 20s linear infinite;
+    }
+}
