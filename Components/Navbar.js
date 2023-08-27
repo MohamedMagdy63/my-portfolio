@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import * as Icons2 from "react-icons/fa";
 import * as Icons3 from "react-icons/md";
 import * as Icons4 from "react-icons/bs";
-import logo from "../public/logo.png";
+import logo from "../public/Logo.png";
 import Image from 'next/image';
 export default function Navbar() {
     const [windowWidth, setWindowWidth] = useState(null);
