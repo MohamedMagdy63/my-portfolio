@@ -4,7 +4,7 @@ import { useEffect , useState} from "react";
 import style from '../styles/Project.module.css';
 import * as Icon1 from 'react-icons/gi';
 import Image from "next/image";
-import logo2 from "../public/logo.png";
+import logo from "../Images/Logo/logo.png";
 import Link from "next/link";
 export default function project() {
     const [project, setProject] = useState(false);
@@ -121,7 +121,7 @@ export default function project() {
         <div className={style.logoContainer}>
             <Link href='/'>
               <Image
-                src={logo2}
+                src={logo}
                 alt ="Logo MG"
                 className={style.logo}
               />
