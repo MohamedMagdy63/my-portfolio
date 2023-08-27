@@ -22,6 +22,8 @@ import mock2 from '../Images/WorksPage/mock2.png'
 import * as Icon0 from 'react-icons/rx'
 import { useState } from 'react';
 import Link from 'next/link';
+import logo2 from "../public/logo.png";
+
 
 export default function Work() {
   // Maintain separate hover states for each project box
@@ -49,6 +51,28 @@ export default function Work() {
       [project]: false,
     }));
   };
+  const linksArray =[
+    {
+     name : 'Home',
+     link : '/'
+    },
+    {
+     name : 'About',
+     link : '/About'
+    },
+    {
+     name : 'Skills',
+     link : '/Skills'
+    },
+    {
+     name : 'Work',
+     link : '/Work'
+    },
+    {
+     name : 'Contact',
+     link : '/Contact'
+    },
+  ]
   return (
     <div className={style.container}>
       <div className={`${style.startBox} ${style.boxStyle}`}>
@@ -140,6 +164,25 @@ export default function Work() {
           <Icon0.RxDoubleArrowRight className={style.arrow}/>
         </div>
       </Link>
+      </div>
+      {/* //////////////////// */}
+      <div className={`${style.containerFooter}`}>
+        <div className={style.logoContainer}>
+            <Link href='/'>
+              <Image
+                src={logo2}
+                alt ="Logo MG"
+                className={style.logo}
+              />
+            </Link>
+          </div>
+          <div className={style.items}>
+            {linksArray.map(({ name, link }) => (
+              <Link key={name} href={link} className={style.item}>
+                {name}
+              </Link>
+            ))}
+          </div>
       </div>
     </div>
   )

@@ -2,10 +2,10 @@ import Navbar from "./Navbar";
 
 export default function MainLayout(props){
    return(
-    <>
+    <div className="layout">
         <Navbar/>
-        {props.children}
-    </>
+        <main>{props.children}</main>
+    </div>
    )
 
 }

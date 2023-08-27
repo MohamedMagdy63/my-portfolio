@@ -2,7 +2,7 @@
     position: absolute;
     top: 15%;
     width: 100%;
-    height: 80vh;
+    height: 150vh;
 }
 .boxStyle{
     border-radius: 35px;
@@ -156,4 +156,194 @@
     height: 100%;
     border-radius: 15px;
     object-fit:contain;
+}
+.container .containerFooter{
+    position: relative;
+    padding-bottom: 2vh;
+    margin-top: 120vh;
+    width: 100%;
+    height: fit-content;
+}
+.container .containerFooter .logoContainer{
+    text-align: center;
+}
+.container .containerFooter .logoContainer .logo{
+    width: 20vw;
+    height: 30vh;
+}
+.container .containerFooter .items{
+    text-align: center;
+
+}
+.container .containerFooter .items{
+    text-align: center;
+    color: #BCBCBC;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+.container .containerFooter .items .item{
+    margin: 2%;
+}
+@media (max-width:1300px) {
+    .container .summery h1{
+        font-size: 50px;
+    }
+}
+@media (max-width:1115px) {
+    .container .summery h1{
+        font-size: 45px;
+    }
+    .container h3{
+        font-size: 16px;
+    }
+}
+@media (max-width:950px) {
+    .container .startBox {
+        margin:10vh 0 0 18vw;
+        width: 65vw;
+        height: 50vh; 
+    }
+    .container h3{
+        font-size: 18px;
+    }
+    .container .summery{
+        position: absolute;
+        top: 0;
+        left: 18.5vw;
+    }
+    .container .summery h1{
+        font-size: 45px;
+    }
+    .container .project1 {
+        top: 62vh;
+        left: 18vw;
+        width: 65vw;
+        height: 50vh; 
+    }
+    .container .project2{
+        top: 114vh;
+        left: 18vw;
+        width: 65vw;
+        height: 50vh; 
+    }
+    .container .project3{
+        top: 166vh;
+        left: 18vw;
+        width: 65vw;
+        height: 50vh; 
+    }
+    .container .project4{
+        top: 218vh;
+        left: 18vw;
+        width: 65vw;
+        height: 50vh; 
+    }
+    .container .project5{
+        top: 270vh;
+        left: 18vw;
+        width: 65vw;
+        height: 50vh;
+    }
+    .container .project6{
+        top: 322vh;
+        left: 18vw;
+        width: 65vw;
+        height: 50vh;
+    }
+    .container .project7{
+        top: 374vh;
+        left: 18vw;
+        width: 65vw;
+        height: 50vh;
+    }
+    .container .project8{
+        top: 426vh;
+        left: 18vw;
+        width: 65vw;
+        height: 50vh;
+    }
+    .container .containerFooter{
+        margin-top: 430vh;
+    }
+}
+@media (max-width:800px) {
+    .container .summery h1{
+        font-size: 35px;
+    }
+}
+@media (max-width:600px) {
+    .container .summery{
+        position: absolute;
+        top: 0;
+        left: 16vw;
+    }
+    .container .summery h1{
+        font-size: 25px;
+    }
+}
+@media (max-width:414px) {
+    .container .summery{
+        position: absolute;
+        top: 0;
+        left: 18vw;
+    }
+    .container .summery h1{
+        font-size: 20px;
+    }
+    .container .startBox {
+        margin:10vh 0 0 8vw;
+        width: 85vw;
+    }
+    .container .project1 {
+        top: 62vh;
+        left: 8vw;
+        width: 85vw;
+        height: 50vh; 
+    }
+    .container .project2{
+        top: 114vh;
+        left: 8vw;
+        width: 85vw;
+        height: 50vh; 
+    }
+    .container .project3{
+        top: 166vh;
+        left: 8vw;
+        width: 85vw;
+        height: 50vh; 
+    }
+    .container .project4{
+        top: 218vh;
+        left: 8vw;
+        width: 85vw;
+        height: 50vh; 
+    }
+    .container .project5{
+        top: 270vh;
+        left: 8vw;
+        width: 85vw;
+        height: 50vh;
+    }
+    .container .project6{
+        top: 322vh;
+        left: 8vw;
+        width: 85vw;
+        height: 50vh;
+    }
+    .container .project7{
+        top: 374vh;
+        left: 8vw;
+        width: 85vw;
+        height: 50vh;
+    }
+    .container .project8{
+        top: 426vh;
+        left: 8vw;
+        width: 85vw;
+        height: 50vh;
+    }
+    .container .containerFooter .logoContainer .logo{
+        width: 60vw;
+        height: 30vh;
+    }
 }

@@ -1,20 +1,41 @@
 import style from '../styles/Home.module.css'
-import myImg from "../public/7.png"
+import myImg from "../public/4.png"
 import Image from 'next/image';
 import * as Icon0 from 'react-icons/rx'
 import * as Icon1 from 'react-icons/gi'
 import * as Icon2 from 'react-icons/fi'
 import * as Icon3 from 'react-icons/fa'
 import * as Icon4 from 'react-icons/bs'
-import * as Icon5 from 'react-icons/bi'
 import * as Icon6 from 'react-icons/di'
 import * as Icon7 from 'react-icons/io5'
 import * as Icon8 from 'react-icons/md'
 import Link from 'next/link';
 import logo from '../public/logo2.png'
 import projectLogo from '../public/1.gif'
-
+import logo2 from "../public/logo.png";
 export default function Home() {
+  const linksArray =[
+    {
+     name : 'Home',
+     link : '/'
+    },
+    {
+     name : 'About',
+     link : '/About'
+    },
+    {
+     name : 'Skills',
+     link : '/Skills'
+    },
+    {
+     name : 'Work',
+     link : '/Work'
+    },
+    {
+     name : 'Contact',
+     link : '/Contact'
+    },
+ ]
   return (
     <div className={style.container}>
       <div className={`${style.startBox} ${style.boxStyle}`}>
@@ -44,7 +65,7 @@ export default function Home() {
             </div>
         </div>
       </Link>
-      <Link href='/'>
+      <Link href='/Work'>
         <div className={ `${style.projects} ${style.boxStyle}`}>
           <div className={style.logoBox}>
             <Image src={projectLogo} alt='My logo' className={style.projectLogo}></Image>
@@ -78,28 +99,54 @@ export default function Home() {
           </div>
         </Link>
       </div>
-      <div className={`${style.services} ${style.boxStyle}`}>
-        <div className={style.top}>
-          <Icon6.DiCodeBadge className={style.icon}/>
-          <Icon8.MdOutlineDesignServices className={style.icon}/>
-          <Icon4.BsDatabaseAdd className={style.icon}/>
-          <Icon3.FaNetworkWired className={style.icon}/>
-          <Icon7.IoHardwareChipOutline className={style.icon}/>
+      <Link href='/Skills'>
+        <div className={`${style.services} ${style.boxStyle}`}>
+          <div className={style.top}>
+            <Icon6.DiCodeBadge className={style.icon}/>
+            <Icon8.MdOutlineDesignServices className={style.icon}/>
+            <Icon4.BsDatabaseAdd className={style.icon}/>
+            <Icon3.FaNetworkWired className={style.icon}/>
+            <Icon7.IoHardwareChipOutline className={style.icon}/>
+          </div>
+          <div className={style.down}>
+            <p>Specialization</p>
+            <h3>Services offering</h3>
+            <Icon0.RxDoubleArrowRight className={style.arrow}/>
+          </div>
         </div>
-        <div className={style.down}>
-          <p>Specialization</p>
-          <h3>Services offering</h3>
+      </Link>
+      <Link href='/Contact'>
+        <div className={`${style.contact} ${style.boxStyle}`}>
+          <div className={style.line}></div>
+          <Icon1.GiFlowerStar className={style.starLine}/>
           <Icon0.RxDoubleArrowRight className={style.arrow}/>
+          <p>Let's <br></br>
+            work <span>together.</span>
+          </p>
         </div>
-      </div>
-      <div className={`${style.contact} ${style.boxStyle}`}>
-        <div className={style.line}></div>
-        <Icon1.GiFlowerStar className={style.starLine}/>
-        <Icon0.RxDoubleArrowRight className={style.arrow}/>
-        <p>Let's <br></br>
-          work <span>together.</span>
-        </p>
+      </Link>
+
+
+      {/* ///////////////// */}
+      <div className={`${style.containerFooter}`}>
+        <div className={style.logoContainer}>
+            <Link href='/'>
+              <Image
+                src={logo2}
+                alt ="Logo MG"
+                className={style.logo}
+              />
+            </Link>
+          </div>
+          <div className={style.items}>
+            {linksArray.map(({ name, link }) => (
+              <Link key={name} href={link} className={style.item}>
+                {name}
+              </Link>
+            ))}
+          </div>
       </div>
     </div>
+    
   )
 }

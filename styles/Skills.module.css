@@ -1,3 +1,7 @@
+.bigContainer{
+    width: 100%;
+    height: 120vh;
+}
 .title{
     margin: 2vh 0 0 42.5vw;
     letter-spacing: 0.3px;
@@ -22,15 +26,6 @@
     font-size: 1.3rem;
     color: #ffffff;
     text-transform: capitalize;
-}
-.edu{
-    width: 84vw;
-    margin-left: 8vw;
-    height: fit-content;
-}
-.edu .container{
-    width: 35vw;
-    height: 40vh; 
 }
 .edu .container .component .partV{
     position: absolute;
@@ -60,15 +55,7 @@
     background-color: #5a57572b;
     border: 3px solid rgba(255, 255, 255, 0.091);
 }
-.edu .container .component .linePlus{
-    position: absolute;
-    top: 46.6vh;
-    left: 8vw;
-    width: 0.1vw;
-    height: 35vh;
-    background-color: #5a57572b;
-    border: 3px solid rgba(255, 255, 255, 0.091);
-}
+
 .edu .container .component .partH{
     position: absolute;
     top: 45.2vh;
@@ -96,8 +83,69 @@
     width: 120%; /* Make the shadow wider than the box */
     height: 100%; /* Keep the shadow height the same as the box */
     background: linear-gradient(to right, transparent, rgba(255, 253, 253, 0.2)); /* Use a linear gradient for shadow effect */
-    transform: skewX(-20deg); /* Apply skew for a diagonal shadow effect */
     z-index: -1; /* Place the shadow behind the box */
+}
+/* //////////////////////// */
+.edu .containerPlus .component .linePlus{
+    position: absolute;
+    top: 46.6vh;
+    left: 8vw;
+    width: 0.1vw;
+    height: 40vh;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+
+.edu .containerPlus .component .partV{
+    position: absolute;
+    top: 38.9vh;
+    left: 8vw;
+    width: 0.1vw;
+    height: 5.7vh;
+    background-color: #5a57572b;
+    border: 3px  solid rgba(255, 255, 255, 0.091);
+}
+.edu .containerPlus .component .circle{
+    position: absolute;
+    top: 44.6vh;
+    left: 7.6vw;
+    width: 1vw;
+    height: 2vh;
+    border-radius: 50%;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .containerPlus .component .partH{
+    position: absolute;
+    top: 45.2vh;
+    left: 8.6vw;
+    width:  4vw;
+    height:0.1vh ;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .containerPlus .box{
+    position: absolute;
+    top: 40vh;
+    left: 12.6vw;
+    width: 35vw;
+    height: 45vh;
+    background-color: #5a57572b;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+    overflow: hidden;
+}
+.edu .containerPlus:hover .box:before {
+    position: absolute;
+    content: '';
+    top: 0; /* Adjust the position of the shadow */
+    left: 4%; /* Adjust the position of the shadow */
+    width: 120%; /* Make the shadow wider than the box */
+    height: 100%; /* Keep the shadow height the same as the box */
+    background: linear-gradient(to right, transparent, rgba(255, 253, 253, 0.2)); /* Use a linear gradient for shadow effect */
+    z-index: -1; /* Place the shadow behind the box */
+}
+.edu .containerPlus:hover .component .circle {
+    background-color: #BCBCBC;
 }
 .data{
     width: 80%;
@@ -163,7 +211,6 @@
     width: 120%; /* Make the shadow wider than the box */
     height: 100%; /* Keep the shadow height the same as the box */
     background: linear-gradient(to right, transparent, rgba(255, 253, 253, 0.2)); /* Use a linear gradient for shadow effect */
-    transform: skewX(-20deg); /* Apply skew for a diagonal shadow effect */
     z-index: -1; /* Place the shadow behind the box */
 }
 
@@ -202,25 +249,6 @@
     background-color: #5a57572b;
     border: 3px solid rgba(255, 255, 255, 0.091);
 }
-
-.edu .container3 .component .line{
-    position: absolute;
-    top: 46.6vh;
-    left: 51.3vw;
-    width: 0.1vw;
-    height: 45vh;
-    background-color: #5a57572b;
-    border: 3px solid rgba(255, 255, 255, 0.091);
-}
-.edu .container3 .component .linePlus{
-    position: absolute;
-    top: 46.6vh;
-    left: 51.3vw;
-    width: 0.1vw;
-    height: 35vh;
-    background-color: #5a57572b;
-    border: 3px solid rgba(255, 255, 255, 0.091);
-}
 .edu .container3 .component .partH{
     position: absolute;
     top: 45.3vh;
@@ -248,11 +276,75 @@
     width: 120%; /* Make the shadow wider than the box */
     height: 100%; /* Keep the shadow height the same as the box */
     background: linear-gradient(to right, transparent, rgba(255, 253, 253, 0.2)); /* Use a linear gradient for shadow effect */
-    transform: skewX(-20deg); /* Apply skew for a diagonal shadow effect */
     z-index: -1; /* Place the shadow behind the box */
 }
 
 .edu .container3:hover .component .circle {
+    background-color: #BCBCBC;
+}
+
+
+
+/* //////////////// */
+.edu .container3Plus .component .partV{
+    position: absolute;
+    top: 38.9vh;
+    left: 51.3vw;
+    width: 0.1vw;
+    height: 5.7vh;
+    background-color: #5a57572b;
+    border: 3px  solid rgba(255, 255, 255, 0.091);
+}
+.edu .container3Plus .component .circle{
+    position: absolute;
+    top: 44.6vh;
+    left: 51vw;
+    width: 1vw;
+    height: 2vh;
+    border-radius: 50%;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container3Plus .component .linePlus{
+    position: absolute;
+    top: 46.6vh;
+    left: 51.3vw;
+    width: 0.1vw;
+    height: 40vh;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container3Plus .component .partH{
+    position: absolute;
+    top: 45.3vh;
+    left: 52vw;
+    width:  4vw;
+    height:0.1vh ;
+    background-color: #5a57572b;
+    border: 3px solid rgba(255, 255, 255, 0.091);
+}
+.edu .container3Plus .box{
+    position: absolute;
+    top: 40vh;
+    left: 56vw;
+    width: 35vw;
+    height: 45vh;
+    background-color: #5a57572b;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+    overflow: hidden;
+}
+.edu .container3Plus:hover .box:before {
+    position: absolute;
+    content: '';
+    top: 0; /* Adjust the position of the shadow */
+    left: 4%; /* Adjust the position of the shadow */
+    width: 120%; /* Make the shadow wider than the box */
+    height: 100%; /* Keep the shadow height the same as the box */
+    background: linear-gradient(to right, transparent, rgba(255, 253, 253, 0.2)); /* Use a linear gradient for shadow effect */
+    z-index: -1; /* Place the shadow behind the box */
+}
+
+.edu .container3Plus:hover .component .circle {
     background-color: #BCBCBC;
 }
 /* //////////////// */
@@ -276,6 +368,7 @@
     background-color: #5a57572b;
     border: 3px solid rgba(255, 255, 255, 0.091);
 }
+
 .edu .container4 .component .partH{
     position: absolute;
     left: 52vw;
@@ -303,7 +396,6 @@
     width: 120%; /* Make the shadow wider than the box */
     height: 100%; /* Keep the shadow height the same as the box */
     background: linear-gradient(to right, transparent, rgba(255, 253, 253, 0.2)); /* Use a linear gradient for shadow effect */
-    transform: skewX(-20deg); /* Apply skew for a diagonal shadow effect */
     z-index: -1; /* Place the shadow behind the box */
 }
 
@@ -378,4 +470,521 @@
     -webkit-transform: scale(1.1);
 	transform: scale(1.1);
     transition: 1s all ease;
+}
+.containerFooter{
+    position: absolute;
+    padding-bottom: 2vh;
+    top: 140vh;
+    width: 100%;
+    height: fit-content;
+}
+.containerFooter .logoContainer{
+    text-align: center;
+}
+.containerFooter .logoContainer .logo{
+    width: 20vw;
+    height: 30vh;
+}
+.containerFooter .items{
+    text-align: center;
+}
+.containerFooter .items{
+    text-align: center;
+    color: #BCBCBC;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+.containerFooter .items .item{
+    margin: 2%;
+}
+@media (max-width:1395px) {
+    .edu .container .box{
+        width: 36vw;
+        height: 42vh;
+    }
+    .edu .container2 .box{
+        width: 36vw;
+        height: 42vh;
+    }
+    .edu .container3 .box{
+        width: 36vw;
+        height: 42vh;
+    }
+    .edu .container4 .box{
+        width: 36vw;
+        height: 42vh;
+    }
+}
+@media (max-width:1150px) {
+    .edu .container .box{
+        width: 37vw;
+        height: 45vh;
+    }
+    .edu .container2 .box{
+        width: 37vw;
+        height: 45vh;
+    }
+    .edu .container3 .box{
+        width: 37vw;
+        height: 45vh;
+    }
+    .edu .container4 .box{
+        width: 37vw;
+        height: 45vh;
+    }
+}
+@media (max-width:1260px) {
+    .edu .containerPlus .component .linePlus{
+        height: 48vh;
+    }
+    .edu .containerPlus .box{
+        position: absolute;
+        top: 40vh;
+        left: 12.6vw;
+        width: 78.5vw;
+        height: 42.5vh;
+    }
+    .edu .container3Plus .component .partV{
+       display: none;
+    }
+    .edu .container3Plus .component .circle{
+        position: absolute;
+        top: 94.6vh;
+        left: 7.6vw;       
+    }
+    .edu .container3Plus .component .linePlus{
+        top: 96.6vh;
+        left: 8vw;
+        height: 40vh;
+    }
+    .edu .container3Plus .component .partH{
+        top: 95.2vh;
+        left: 8.6vw;
+    }
+    .edu .container3Plus .box{
+        top: 90vh;
+        left: 12.5vw;
+        width: 79vw;
+    }
+}
+@media (max-width:1060px) {
+    .taps .tap{
+        width: 19vw;
+        height: 8vh;
+        font-size: 1rem;
+    }
+    .edu .container .component .partV{
+        left: 10vw;
+    }
+    .edu .container .component .circle{
+        left: 9.5vw;
+        width: 1.5vw;
+    }
+    .edu .container .component .line{
+        left: 10vw;
+    }
+    .edu .container .component .partH{
+        left: 11vw;
+    }
+    .edu .container .box{
+        left: 15vw;
+        width: 70vw;
+        height: 42.5vh;
+    }
+    .edu .container2 .component .circle{
+        left: 9.5vw;
+        width: 1.5vw;
+    }
+    .edu .container2 .component .line{
+        left: 10vw;
+        height: 45vh;
+    }
+    .edu .container2 .component .partH{
+        left: 11vw;
+    }
+    .edu .container2 .box{
+        left: 15vw;
+        width: 70vw;
+        height: 42.5vh;
+    }
+    /* //////////////////////// */
+    .edu .container3 .component .partV{
+        display: none;
+    }
+    .edu .container3 .component .circle{
+        top: 138.5vh;
+        left: 9.5vw;
+        width: 1.5vw;
+    }
+    .edu .container3 .component .line{
+        top: 140.5vh;
+        left: 10vw;
+    }
+    .edu .container3 .component .partH{
+        top: 139vh;
+        left: 11vw;
+    }
+    .edu .container3 .box{
+        top: 132vh;
+        left: 15vw;
+        width: 70vw;
+        height: 42.5vh;
+    }
+    /* //////////////// */
+    
+    .edu .container4 .component .circle{
+        top: 185.5vh;
+        left: 9.5vw;
+        width: 1.5vw;
+    }
+    .edu .container4 .component .line{
+        left: 10vw;
+        top:187.5vh;
+        height: 40vh;
+    }
+    .edu .container4 .component .partH{
+        position: absolute;
+        left: 11vw;
+        top:186vh;
+    }
+    .edu .container4 .box{
+        top: 178vh;
+        left: 15vw;
+        width: 70vw;
+        height: 42.5vh;
+    }
+    .certifcate{
+        display: grid;
+        grid-template-columns: auto  auto;
+    }
+    .certifcate .box{
+        width: 40vw;
+    }
+    .containerFooter{
+        top: 230vh;
+    }
+}
+@media (max-width:900px) {
+    .title{
+        margin: 2vh 0 0 35vw;
+    }
+    .taps {
+        margin: 2vh 10vh;
+    }
+    .taps .tap{
+        width: 19vw;
+        height: 8vh;
+        font-size: 14px;
+    }
+}
+@media (max-width:600px) {
+    .title{
+        margin: 2vh 0 0 30vw;
+    }
+    .title h1{
+        margin-left: -35px;
+        font-size: 3rem;
+    }
+    .taps {
+        margin: 2vh 5vh;
+    }
+    .taps .tap{
+        width: 19vw;
+        height: 8vh;
+        font-size: 14px;
+    }
+    .edu .container .component .partV{
+        left: 9.5vw;
+    }
+    .edu .container .component .circle{
+        left: 8.5vw;
+        width: 2.5vw;
+    }
+    .edu .container .component .line{
+        left: 9.5vw;
+        height: 50vh;
+    }
+    .edu .container .component .partH{
+        left: 11vw;
+    }
+    .edu .container .box{
+        left: 15vw;
+        width: 70vw;
+        height: 50vh;
+    }
+    .edu .container2 .component .circle{
+        top: 96.5vh;
+        left: 8.5vw;
+        width: 2.5vw;
+    }
+    .edu .container2 .component .line{
+        top: 98.5vh;
+        left: 9.5vw;
+        height: 52vh;
+    }
+    .edu .container2 .component .partH{
+        left: 11vw;
+        top: 97vh;
+    }
+    .edu .container2 .box{
+        top: 93vh;
+        left: 15vw;
+        width: 70vw;
+        height: 50vh;
+    }
+    /* //////////////////////// */
+    .edu .container3 .component .circle{
+        top: 150.5vh;
+        left: 8.5vw;
+        width: 2.5vw;
+    }
+    .edu .container3 .component .line{
+        top: 152.5vh;
+        left: 9.5vw;
+        height: 52vh;
+    }
+    .edu .container3 .component .partH{
+        top: 151vh;
+        left: 11vw;
+    }
+    .edu .container3 .box{
+        top: 146vh;
+        left: 15vw;
+        width: 70vw;
+        height: 50vh;
+    }
+    /* //////////////// */
+    
+    .edu .container4 .component .circle{
+        top: 204.5vh;
+        left: 8.5vw;
+        width: 2.5vw;
+    }
+    .edu .container4 .component .line{
+        left: 9.5vw;
+        top:206.5vh;
+        height: 45vh;
+    }
+    .edu .container4 .component .partH{
+        position: absolute;
+        left: 11vw;
+        top:205vh;
+    }
+    .edu .container4 .box{
+        top: 199vh;
+        height: 50vh;
+    }
+/* ///////////////////////// */
+    .edu .containerPlus .component .linePlus{
+        height: 65vh;
+    }
+    .edu .containerPlus .box{
+        position: absolute;
+        top: 40vh;
+        left: 12.6vw;
+        width: 78.5vw;
+        height: 60vh;
+    }
+    .edu .containerPlus .component .circle{
+        left: 7vw;    
+        width: 2.5vw;      
+    }
+    .edu .container3Plus .component .circle{
+        top: 111.5vh;
+        left: 7vw;    
+        width: 2.5vw;      
+    }
+    .edu .container3Plus .component .linePlus{
+        top: 113.5vh;
+        left: 8vw;
+        height: 40vh;
+    }
+    .edu .containerPlus .component .partH{
+        left: 9.5vw;
+        width: 3vw;
+    }
+    .edu .container3Plus .component .partH{
+        top: 112vh;
+        left: 9.5vw;
+        width: 3vw;
+    }
+    .edu .container3Plus .box{
+        top: 105vh;
+        left: 12.5vw;
+        width: 79vw;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .grid .right{
+        width: 80vw;
+        margin-top:5vh ;
+    }
+    .grid .left{
+        width: 80vw;
+        height: fit-content;
+        margin:5vh 0vw;
+    }
+    .certifcate{
+        display: grid;
+        grid-template-columns:  auto;
+    }
+    .certifcate .box{
+        width: 80vw;
+    }
+    .certifcate .box .imgBox{
+        margin: 6% 8%;
+    }
+    .containerFooter{
+        top: 250vh;
+    }
+}
+@media (max-width:415px) {
+    .title{
+        margin: 2vh 0 0 22.5vw;
+    }
+    .title p{
+        padding: 2vh;
+        font-size: 1rem;
+    }
+    .title h1{
+        margin-left: -15px;
+        font-size: 2.5rem;
+    }
+    .taps {
+        margin: 0vh;
+    }
+    .edu .container .component .partV{
+        left: 9vw;
+    }
+    .edu .container .component .circle{
+        left: 8vw;
+        width: 3.5vw;
+    }
+    .edu .container .component .line{
+        left: 9vw;
+        height: 55vh;
+    }
+    .edu .container .component .partH{
+        left: 11.5vw;
+    }
+    .edu .container .box{
+        left: 15.5vw;
+        width: 75vw;
+        height: 55vh;
+    }
+    .edu .container2 .component .circle{
+        top: 101.6vh;
+        left: 8vw;
+        width: 3.5vw;
+    }
+    .edu .container2 .component .line{
+        top: 103.6vh;
+        left: 9vw;
+        height: 55vh;
+    }
+    .edu .container2 .component .partH{
+        left: 11.5vw;
+        top: 102vh;
+    }
+    .edu .container2 .box{
+        top: 97.5vh;
+        left: 15.5vw;
+        width: 75vw;
+        height: 55vh;
+    }
+    /* //////////////////////// */
+    .edu .container3 .component .circle{
+        top: 158.6vh;
+        left: 8vw;
+        width: 3.5vw;
+    }
+    .edu .container3 .component .line{
+        top: 160.6vh;
+        left: 9vw;
+        height: 57vh;
+    }
+    .edu .container3 .component .partH{
+        top: 159.1vh;
+        left: 11.5vw;
+    }
+    .edu .container3 .box{
+        top: 155vh;
+        left: 15.5vw;
+        width: 75vw;
+        height: 55vh;
+    }
+    /* //////////////// */
+    
+    .edu .container4 .component .circle{
+        top: 217.6vh;
+        left: 8vw;
+        width: 3.5vw;
+    }
+    .edu .container4 .component .line{
+        left: 9vw;
+        top:219.6vh;
+        height: 45vh;
+    }
+    .edu .container4 .component .partH{
+        position: absolute;
+        left: 11.5vw;
+        top:218vh;
+    }
+    .edu .container4 .box{
+        top: 212.5vh;
+        width: 75vw;
+        height: 50vh;
+        left: 15.5vw;
+    }
+
+    /* /////////////// */
+    .edu .containerPlus .box{
+        height: 65vh;
+    }
+    .edu .containerPlus .component .circle{
+        left: 7vw;    
+        width: 3.5vw;      
+    }
+    .edu .container3Plus .component .circle{
+        top: 118.5vh;
+        left: 7vw;    
+        width: 3.5vw;      
+    }
+    .edu .containerPlus .component .linePlus{
+        height: 72vh;
+    }
+    .edu .container3Plus .component .linePlus{
+        top: 120.5vh;
+        left: 8vw;
+        height: 40vh;
+    }
+    .edu .containerPlus .component .partH{
+        left: 10.5vw;
+        width: 2vw;
+    }
+    .edu .container3Plus .component .partH{
+        top: 119vh;
+        left: 10.5vw;
+        width: 2vw;
+    }
+    .edu .container3Plus .box{
+        top: 112.5vh;
+        left: 12.5vw;
+        width: 79vw;
+    }
+    .certifcate .box{
+        width: 90vw;
+    }
+    .certifcate .box .imgBox{
+        margin:  8%;
+    }
+    .containerFooter{
+        top: 270vh;
+    }
+    .containerFooter .logoContainer .logo{
+        width: 60vw;
+        height: 30vh;
+    }
 }

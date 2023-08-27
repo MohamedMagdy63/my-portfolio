@@ -215,6 +215,10 @@
       100% {-webkit-transform: translateX(-100%);
           transform: translateX(-100%);}
 }
+@keyframes scrolling-left3 {
+    0% {-webkit-transform: translateX(50%);}
+    100% {-webkit-transform: translateX(-50%);}
+}
 @-webkit-keyframes scrolling-left1 {
     0% {-webkit-transform: translateX(100%);}
       100% {-webkit-transform: translateX(-100%);}
@@ -388,9 +392,42 @@
     opacity: 1;
     transition: all 1s ease;
 }
+.container .containerFooter{
+    position: relative;
+    padding-bottom: 2vh;
+    margin-top: 40vh;
+    width: 100%;
+    height: fit-content;
+}
+.container .containerFooter .logoContainer{
+    text-align: center;
+}
+.container .containerFooter .logoContainer .logo{
+    width: 20vw;
+    height: 30vh;
+}
+.container .containerFooter .items{
+    text-align: center;
+
+}
+.container .containerFooter .items{
+    text-align: center;
+    color: #BCBCBC;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+.container .containerFooter .items .item{
+    margin: 2%;
+}
 @media (max-width:1311px) {
     .container .services .top .icon{
         font-size: 2.5rem;
+    }
+    .container .newSletter p span{
+        display:inline-block;
+        /* Apply animation to this element */
+        -webkit-animation: scrolling-left3 10s linear infinite;
+        animation: scrolling-left3 10s linear infinite;
     }
 }
 @media (max-width:1252px) {
@@ -425,6 +462,9 @@
     .container .services .top .icon{
         font-size: 3.5rem;
         margin: 30px 0 0 12%;
+    }
+    .container .containerFooter{
+        margin-top: 70vh;
     }
 }
 @media (max-width:1110px) {
@@ -478,6 +518,9 @@
     .container .services .top .icon{
         font-size: 3.5rem;
         margin: 30px 0 0 9%;
+    }
+    .container .containerFooter{
+        margin-top: 110vh;
     }
 }
 @media (max-width:715px) {
@@ -541,6 +584,7 @@
     .container .accounts .items li{
         width: 100px;
         height: 12vh;
+        margin-top:2vh ;
     }
     .container .accounts .items .item .icon{
         font-size: 3rem;
@@ -561,12 +605,15 @@
         font-size: 2.2rem;
         margin: 30px 0 0 9%;
     }
+    .container .containerFooter{
+        margin-top: 200vh;
+    }
    
 }
 @media (max-width:415px) {
     .container .startBox {
-        margin-left: 12%;
-        width: 74%;
+        margin-left: 10%;
+        width: 80vw;
         height: 74%; 
     }
     .container .startBox .imgContainer{
@@ -599,26 +646,26 @@
     }
     .container .newSletter{
         top: 77%;
-        left: 12%;
-        width: 74%;
+        left: 10%;
+        width: 80vw;
         height: 8%;
     }
     .container .moreAbout{
         top: 88%;
-        left: 12%;
-        width: 75%;
+        left: 10%;
+        width: 80vw;
         height: 42%;
     }
     .container .projects{
         top: 133%;
-        left: 12%;
-        width: 75%;
+        left: 10%;
+        width: 80vw;
         height: 42%;
     }
     .container .accounts{
         top: 178%;
-        left: 12%;
-        width: 75%;
+        left: 10%;
+        width: 80vw;
         height: 42%;
     }
     .container .accounts .items li{
@@ -630,8 +677,8 @@
     }
     .container .contact{
         top: 223%;
-        left: 12%;
-        width: 74%;
+        left: 10%;
+        width: 80vw;
         height: 42%;
     }
     .container .contact .arrow{
@@ -645,8 +692,8 @@
     }
     .container .services{
         top: 268%;
-        left: 12%;
-        width: 75%;
+        left: 10%;
+        width: 80vw;
         height: 42%;
     }
     .container .services .top .icon{
@@ -662,10 +709,8 @@
         font-size: 3rem;
         opacity: 0.2;
     }
-    .container .newSletter p span{
-        display:inline-block;
-        /* Apply animation to this element */
-        -webkit-animation: scrolling-left3 20s linear infinite;
-        animation: scrolling-left3 20s linear infinite;
+    .container .containerFooter .logoContainer .logo{
+        width: 60vw;
+        height: 30vh;
     }
 }

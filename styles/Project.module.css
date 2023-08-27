@@ -1,11 +1,9 @@
-
 .container .title{
     font-size: 2.5rem;
     margin: 4vh 0 2vh 8vw ;
     font-family: Arial, sans-serif;
     text-transform:uppercase;
     letter-spacing: 0.6px;
-
 }
 .container .title .star{
     color: #BCBCBC;
@@ -57,7 +55,7 @@
 .container .box .leftBox .line{
     position: absolute;
     top: 0px;
-    left: 80%;
+    left: 15vw;
     width: 2px;
     opacity: 0.3;
     height: 6vh;
@@ -66,7 +64,7 @@
 .container .box .leftBox .starLine{
     position: absolute;
     top: 5.7vh;
-    left: 74.8%;
+    left: 14vw;
     font-size: 2rem;
     opacity: 0.3;
 }
@@ -117,4 +115,174 @@
     height: 50vh;
     border-radius: 35px;
     object-fit: contain;
+}
+.containerFooter{
+    position: relative;
+    padding-bottom: 2vh;
+    margin-top: 40vh;
+    width: 100%;
+    height: fit-content;
+}
+.containerFooter .logoContainer{
+    text-align: center;
+}
+.containerFooter .logoContainer .logo{
+    width: 20vw;
+    height: 30vh;
+}
+.containerFooter .items{
+    text-align: center;
+
+}
+.containerFooter .items{
+    text-align: center;
+    color: #BCBCBC;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+.containerFooter .items .item{
+    margin: 2%;
+}
+@media (max-width:1430px) {
+    .container .box .rightBox p{
+        padding: 1.5vh 2vw;
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:1260px) {
+    .container .box .rightBox p{
+        padding: 1.5vh 2vw;
+        font-size: 1rem;
+    }
+    .container .box .rightBox h3{
+        font-size: 18px;
+    }
+    .container .box .leftBox .starLine{
+        left: 13.8vw;
+    }
+}
+@media (max-width:1130px) {
+    .container .box .rightBox h3{
+        font-size: 16px;
+    }
+}
+@media (max-width:1130px) {
+    .container .box .rightBox h3{
+        font-size: 16px;
+    }
+}
+@media (max-width:1060px) {
+    .container .title{
+        font-size: 2rem;
+    }
+    .container .box .leftBox .starLine{
+        left: 13.6vw;
+    }
+}
+@media (max-width:1000px) {
+    .container .box .leftBox .starLine{
+        left: 13.4vw;
+    }
+}
+@media (max-width:870px) {
+    .container .title{
+        font-size: 1.5rem;
+    }
+    .container .box .rightBox h3{
+        font-size: 14px;
+    }
+    .container .box .leftBox {
+        height: 92.5%;
+    }
+    .container .box .leftBox .starLine{
+        left: 13.2vw;
+    }
+}
+@media (max-width:870px) {
+    .container .box .leftBox .starLine{
+        left: 13vw;
+    }
+}
+@media (max-width:710px) {
+    .container .box {
+        width: 95%;
+        height: 80vh;
+    }
+    .container .box .leftBox .starLine{
+        left: 12.8vw;
+    }
+    .container .box .rightBox{
+        width: 60vw;
+        height: 100%;
+    }
+}
+@media (max-width:650px) {
+    .container .title{
+        font-size: 1rem;
+    }
+    .container .box {
+        margin: 5vh 0vw;
+        width: 100%;
+        height: 85vh;       
+    }
+    .container .box .rightBox{
+        width: 60vw;
+        height: 100%;
+    }
+    .container .box .leftBox{
+        width: 30vw;
+    }
+    .container .box .leftBox .line{
+        left: 22.5vw;
+    }
+    .container .box .leftBox .starLine{
+        left: 20.1vw;
+        font-size: 2rem;
+        opacity: 0.3;
+    }
+}
+@media (max-width:600px) {
+    .container .box .leftBox .starLine{
+        left: 19.9vw;
+    }
+}
+@media (max-width:500px) {
+    .container .box .leftBox .starLine{
+        left: 19.5vw;
+    }
+    .container .box {
+        margin: 2.5vh 0vw;
+        height: 95vh;       
+    }
+}
+@media (max-width:415px) {
+    .container .title{
+        margin: 4vh 0 2vh 5% ;
+        font-size: 0.8rem;
+    }
+    .container .box .leftBox{
+        height: 60vh;
+    }
+    .container .box .leftBox .starLine{
+        left: 18.5vw;
+    }
+    .container .box .leftBox p{
+        font-size: 1rem;
+    }
+    .container .studio{
+        grid-template-columns: auto ;
+    }
+    .container .studio .box{
+        width: 90vw;
+    }
+    .container .studio .box .img{
+        width: 90vw;
+    }
+    .container .box .rightBox h3{
+        font-size: 12.5px;
+    }
+    .containerFooter .logoContainer .logo{
+        width: 60vw;
+        height: 30vh;
+    }
 }

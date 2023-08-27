@@ -12,6 +12,13 @@ import Udacity2 from "../public/udacity-2.png"
 import Amit from "../public/Amit.png"
 import GreatLearning from "../public/GreatLearning.jpg"
 import Image from 'next/image';
+import * as Icon1 from 'react-icons/bs'
+import * as Icon2 from 'react-icons/tb'
+import * as Icon3 from 'react-icons/md'
+import * as Icon4 from 'react-icons/pi'
+import logo2 from "../public/logo.png";
+
+
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -52,9 +59,41 @@ export default function Skills() {
     setValue(newValue);
   };
 
+  const [isWideScreen, setIsWideScreen] = useState(true);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth > 414);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  const linksArray =[
+    {
+     name : 'Home',
+     link : '/'
+    },
+    {
+     name : 'About',
+     link : '/About'
+    },
+    {
+     name : 'Skills',
+     link : '/Skills'
+    },
+    {
+     name : 'Work',
+     link : '/Work'
+    },
+    {
+     name : 'Contact',
+     link : '/Contact'
+    },
+ ]
   return (
-    <>
+    <div className={style.bigContainer}>
       <div className={style.title}>
           <p>Fresh graduate 2023</p>
           <h1>My Resume</h1>
@@ -62,10 +101,10 @@ export default function Skills() {
       <Box sx={{ width: '100%', scrollBehavior: 'none', overflow: 'hidden'}} >
         <Box sx={{ borderBottom: 1, borderColor: 'divider'  }}>
             <Tabs value={value} TabIndicatorProps={{style: {backgroundColor: "#95afc0"}}} className={style.taps} onChange={handleChange} aria-label="basic tabs example">
-                <Tab label="Courses" {...a11yProps(0)} className={`${style.tap} ${style.boxStyle}`}/>
-                <Tab label="Professional Skills" {...a11yProps(1)} className={`${style.tap} ${style.boxStyle}`}   />
-                <Tab label="Experience" {...a11yProps(2)} className={`${style.tap} ${style.boxStyle}`}   />
-                <Tab label="Certification" {...a11yProps(3)} className={`${style.tap} ${style.boxStyle} `}   />
+                <Tab label={isWideScreen ? "Courses" : <Icon1.BsBook/>} {...a11yProps(0)} className={`${style.tap}`}/>
+                <Tab label={isWideScreen ? "Professional Skills" :<Icon2.TbTools/>  } {...a11yProps(1)} className={`${style.tap}`}   />
+                <Tab label={isWideScreen ? "Experiences" :<Icon3.MdOutlineWorkHistory/>  }{...a11yProps(2)} className={`${style.tap}`}   />
+                <Tab label={isWideScreen ? "Certifications" :<Icon4.PiCertificateLight/>  }{...a11yProps(3)} className={`${style.tap} `}   />
             </Tabs>
         </Box>
         <CustomTabPanel value={value} index={0}>
@@ -198,7 +237,7 @@ export default function Skills() {
         </CustomTabPanel>
           <CustomTabPanel value={value} index={2}>
           <div className={style.edu} value={value} index={0}>
-            <div className={style.container}>
+            <div className={`${style.containerPlus} ${style.direction}`}>
               <div className={style.component}>
                 <div className={style.partV}></div>
                 <div className={style.circle}></div>
@@ -215,7 +254,7 @@ export default function Skills() {
               </div>
             </div>
             {/* ////////3///////// */}
-            <div className={style.container3}>
+            <div className={style.container3Plus}>
               <div className={style.component}>
                 <div className={style.partV}></div>
                 <div className={style.circle}></div>
@@ -275,6 +314,25 @@ export default function Skills() {
             </div>
           </CustomTabPanel>
       </Box>
-    </>
+      {/* //////////////////// */}
+      <div className={`${style.containerFooter}`}>
+        <div className={style.logoContainer}>
+            <Link href='/'>
+              <Image
+                src={logo2}
+                alt ="Logo MG"
+                className={style.logo}
+              />
+            </Link>
+          </div>
+          <div className={style.items}>
+            {linksArray.map(({ name, link }) => (
+              <Link key={name} href={link} className={style.item}>
+                {name}
+              </Link>
+            ))}
+          </div>
+      </div>
+    </div>
   );
 }

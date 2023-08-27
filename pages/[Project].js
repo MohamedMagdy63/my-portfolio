@@ -4,6 +4,8 @@ import { useEffect , useState} from "react";
 import style from '../styles/Project.module.css';
 import * as Icon1 from 'react-icons/gi';
 import Image from "next/image";
+import logo2 from "../public/logo.png";
+import Link from "next/link";
 export default function project() {
     const [project, setProject] = useState(false);
     const router = useRouter()
@@ -11,6 +13,28 @@ export default function project() {
     useEffect(()=>{
         setProject(router.asPath)
     })
+    const linksArray =[
+        {
+         name : 'Home',
+         link : '/'
+        },
+        {
+         name : 'About',
+         link : '/About'
+        },
+        {
+         name : 'Skills',
+         link : '/Skills'
+        },
+        {
+         name : 'Work',
+         link : '/Work'
+        },
+        {
+         name : 'Contact',
+         link : '/Contact'
+        },
+      ]
   return (
     <>
     {
@@ -92,6 +116,25 @@ export default function project() {
     </div>
     : ''
     }
+    {/* //////////////////// */}
+    <div className={`${style.containerFooter}`}>
+        <div className={style.logoContainer}>
+            <Link href='/'>
+              <Image
+                src={logo2}
+                alt ="Logo MG"
+                className={style.logo}
+              />
+            </Link>
+          </div>
+          <div className={style.items}>
+            {linksArray.map(({ name, link }) => (
+              <Link key={name} href={link} className={style.item}>
+                {name}
+              </Link>
+            ))}
+          </div>
+      </div>
     </>
   )
 }

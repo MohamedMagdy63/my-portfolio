@@ -1,20 +1,36 @@
 import style from '../styles/About.module.css'
-import myImg from "../public/4.png"
+import myImg from "../public/7.png"
 import Image from 'next/image';
 import * as Icon0 from 'react-icons/rx'
 import * as Icon1 from 'react-icons/gi'
 import * as Icon2 from 'react-icons/fi'
 import * as Icon3 from 'react-icons/fa'
-import * as Icon4 from 'react-icons/bs'
-import * as Icon5 from 'react-icons/pi'
-import * as Icon6 from 'react-icons/di'
-import * as Icon7 from 'react-icons/io5'
-import * as Icon8 from 'react-icons/md'
 import Link from 'next/link';
 import logo from '../public/logo2.png'
-import projectLogo from '../public/1.gif'
-
+import logo2 from "../public/logo.png";
 export default function About() {
+  const linksArray =[
+    {
+     name : 'Home',
+     link : '/'
+    },
+    {
+     name : 'About',
+     link : '/About'
+    },
+    {
+     name : 'Skills',
+     link : '/Skills'
+    },
+    {
+     name : 'Work',
+     link : '/Work'
+    },
+    {
+     name : 'Contact',
+     link : '/Contact'
+    },
+ ]
   return (
     <div className={style.container}>
         <div className={`${style.startBox}  ${style.boxStyle}`}>
@@ -86,14 +102,17 @@ export default function About() {
           </div>
         </Link>
       </div>
-      <div className={`${style.contact} ${style.boxStyle} `}>
-        <div className={style.line}></div>
-        <Icon1.GiFlowerStar className={style.starLine}/>
-        <Icon0.RxDoubleArrowRight className={style.arrow}/>
-        <p>Let's <br></br>
-          work <span>together.</span>
-        </p>
-      </div>
+      <Link href='/Contact'>
+        <div className={`${style.contact} ${style.boxStyle} `}>
+          <div className={style.line}></div>
+          <Icon1.GiFlowerStar className={style.starLine}/>
+          <Icon0.RxDoubleArrowRight className={style.arrow}/>
+          <p>Let's <br></br>
+            work <span>together.</span>
+          </p>
+        </div>
+      </Link>
+      
       <Link href='/Skills'>
         <div className={ `${style.moreAbout} ${style.boxStyle}`}>
             <div className={style.logoBox}>
@@ -106,6 +125,25 @@ export default function About() {
             </div>
         </div>
       </Link>
+      {/* //////////////////// */}
+      <div className={`${style.containerFooter}`}>
+        <div className={style.logoContainer}>
+            <Link href='/'>
+              <Image
+                src={logo2}
+                alt ="Logo MG"
+                className={style.logo}
+              />
+            </Link>
+          </div>
+          <div className={style.items}>
+            {linksArray.map(({ name, link }) => (
+              <Link key={name} href={link} className={style.item}>
+                {name}
+              </Link>
+            ))}
+          </div>
+      </div>
     </div>
   )
 }

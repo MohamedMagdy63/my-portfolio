@@ -1,0 +1,242 @@
+.container{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-family: Arial, sans-serif;
+}
+.container .infoBox{
+    position: relative;
+    margin: 16% 0 0 20%;
+    width: 70%;
+    height: fit-content;
+}
+.container .infoBox .mainTitle{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.container .infoBox .dataBox{
+    width: 90%;
+    height: fit-content;
+    margin: 12.5% 0 0 0;
+}
+.container .infoBox .dataBox .left .icon{
+    width: 70px;
+    height: 10vh;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 2.5rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+    background-color: #5a575714;
+    border-radius: 7px;
+}
+.container .infoBox .dataBox .right{
+    position: absolute;
+    left: 6vw;
+    margin-top: -10vh;
+}
+.container .infoBox .dataBox .right .line{
+    text-transform: uppercase;
+    color: #BCBCBC;
+}
+.container .infoBox .dataBox .right .data{
+    margin-top: 10px;
+}
+.container .socialData{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.container .socialData .iconBox{
+    margin-top: 40px;
+    width: 55%;
+    height: 10vh;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2.2rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+    background-color: #5a575714;
+    border-radius: 50%;
+}
+.container .socialData .iconBox:hover{
+    background-color: #ffffff;
+    opacity: 1;
+    transition: all 1s ease;
+}
+.container .socialData .iconBox .linkIcon:hover{
+    color: black;
+    transition: all 1s ease;
+}
+.container .mailBox{
+    margin: 10% 0 0 -5% ;
+    position: relative;
+    width: 90%;
+    height: fit-content;
+    border: 0.5px solid rgba(255, 255, 255, 0.091);
+    background-color: #5a575714;
+    border-radius: 35px;
+}
+.container .mailBox p{
+    margin: 3%;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.container .mailBox p span{
+    font-weight: 600;
+    color: #54acf9;  /* fallback for old browsers */
+}
+.container .mailBox .formBox{
+    margin: 0 5%;
+}
+.commonStyle{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #5a575723;
+    width: 95%;
+    margin: 1% 2%;
+}
+.container .mailBox .formBox input{
+    padding: 2%;
+    height:8vh ;
+}
+.container .mailBox .formBox .data{
+    height:12vh ;
+    padding:2% 0 10% 2% ;
+    overflow: hidden;
+}
+.container .mailBox .formBox .buttonBox{
+    height: 6.5vh;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 2%;
+}
+.container .mailBox .formBox .buttonBox:hover{
+    background-color: #ffffff;
+    color: #000;
+    transition: all 1s ease;
+}
+.container .mailBox .formBox .error{
+    color: rgb(183, 1, 1);
+    font-size: 14px;
+    font-weight: 400;
+    margin:0 0 0 3%;
+    padding: 0;
+}
+.container .mailBox .formBox .errorMassage{
+    margin:1% 0 1% 3%;
+    font-size: 14px;
+    font-weight: 400;
+    width: 94%;
+    padding: 2px;
+    border: 0.5px solid rgba(223, 211, 41, 0.895);
+}
+.containerFooter{
+    position: absolute;
+    padding-bottom: 2vh;
+    top: 90vh;
+    width: 100%;
+    height: fit-content;
+}
+.containerFooter .logoContainer{
+    text-align: center;
+}
+.containerFooter .logoContainer .logo{
+    width: 20vw;
+    height: 30vh;
+}
+.containerFooter .items{
+    text-align: center;
+
+}
+.containerFooter .items{
+    text-align: center;
+    color: #BCBCBC;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+.containerFooter .items .item{
+    margin: 2%;
+}
+@media (max-width:1330px) {
+    .container .mailBox{
+        margin: 10%  ;
+        position: relative;
+        width: 90%;
+        height: fit-content;
+        border: 0.5px solid rgba(255, 255, 255, 0.091);
+        background-color: #5a575714;
+        border-radius: 35px;
+    }
+}
+@media (max-width:1160px) {
+    .container .infoBox .dataBox .right{
+        left: 8vw;
+    }
+    .container .socialData .iconBox{
+        width: 80%;
+    }
+}
+@media (max-width:1060px) {
+    .container .infoBox{
+        position: relative;
+        margin: 16% 0 0 5%;
+        width: 70%;
+    }
+}
+@media (max-width:910px) {
+    .container{
+        grid-template-columns: auto ;
+    } 
+    .container .infoBox{
+        position: relative;
+        margin: 16% 0 0 15%;
+        width: 70%;
+    }
+    .container .infoBox .dataBox .right{
+        left: 12vw;
+    }
+    .container .socialData .iconBox{
+        width: 45%;
+    }
+    .container .mailBox{
+        margin: 5%  ;
+    }
+}
+@media (max-width:620px) {
+    .container .infoBox{
+        position: relative;
+        margin: 16% 0 0 15%;
+        width: 70%;
+    }
+    .container .infoBox .dataBox .right{
+        left: 18vw;
+    }
+    .container .socialData .iconBox{
+        width: 60%;
+    }
+    .container .mailBox{
+        margin: 5%  ;
+    }
+}
+@media (max-width:415px) {
+    .container .infoBox{
+        margin: 16% 0 0 5%;
+    }
+    .container .infoBox .dataBox .right{
+        left: 18vw;
+    }
+    .container .socialData .iconBox{
+        width: 90%;
+    }
+    .container .mailBox{
+        margin: 5%  ;
+    }
+    .containerFooter{
+        top: 150vh;
+    }
+    .containerFooter .logoContainer .logo{
+        width: 60vw;
+        height: 30vh;
+    }
+}
