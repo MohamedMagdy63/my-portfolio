@@ -3,7 +3,7 @@ import * as Icon2 from 'react-icons/bs'
 import * as Icon3 from 'react-icons/ci'
 import * as Icon4 from 'react-icons/fa'
 import * as Icon5 from 'react-icons/fi'
-import logo2 from "../public/logo.png";
+import logo from "../Images/Logo/logo.png";
 import style from '../styles/Contact.module.css'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -175,7 +175,7 @@ export default function Contact (){
                 <div className={style.logoContainer}>
                     <Link href='/'>
                     <Image
-                        src={logo2}
+                        src={logo}
                         alt ="Logo MG"
                         className={style.logo}
                     />

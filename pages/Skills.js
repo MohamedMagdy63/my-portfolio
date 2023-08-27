@@ -16,7 +16,7 @@ import * as Icon1 from 'react-icons/bs'
 import * as Icon2 from 'react-icons/tb'
 import * as Icon3 from 'react-icons/md'
 import * as Icon4 from 'react-icons/pi'
-import logo2 from "../public/logo.png";
+import logo from "../Images/Logo/logo.png";
 
 
 
@@ -319,7 +319,7 @@ export default function Skills() {
         <div className={style.logoContainer}>
             <Link href='/'>
               <Image
-                src={logo2}
+                src={logo}
                 alt ="Logo MG"
                 className={style.logo}
               />

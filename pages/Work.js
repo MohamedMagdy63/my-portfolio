@@ -22,7 +22,7 @@ import mock2 from '../Images/WorksPage/mock2.png'
 import * as Icon0 from 'react-icons/rx'
 import { useState } from 'react';
 import Link from 'next/link';
-import logo2 from "../public/logo.png";
+import logo from "../Images/Logo/logo.png";
 
 
 export default function Work() {
@@ -170,7 +170,7 @@ export default function Work() {
         <div className={style.logoContainer}>
             <Link href='/'>
               <Image
-                src={logo2}
+                src={logo}
                 alt ="Logo MG"
                 className={style.logo}
               />

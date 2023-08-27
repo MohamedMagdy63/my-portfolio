@@ -12,7 +12,8 @@ import * as Icon8 from 'react-icons/md'
 import Link from 'next/link';
 import logo from '../public/logo2.png'
 import projectLogo from '../public/1.gif'
-import logo2 from "../public/logo.png";
+import logo2 from "../Images/Logo/logo.png";
+
 export default function Home() {
   const linksArray =[
     {
