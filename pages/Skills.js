@@ -16,7 +16,6 @@ import * as Icon1 from 'react-icons/bs'
 import * as Icon2 from 'react-icons/tb'
 import * as Icon3 from 'react-icons/md'
 import * as Icon4 from 'react-icons/pi'
-import logo from "../Images/Logo/logo.png";
 
 
 
@@ -70,28 +69,6 @@ export default function Skills() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-  const linksArray =[
-    {
-     name : 'Home',
-     link : '/'
-    },
-    {
-     name : 'About',
-     link : '/About'
-    },
-    {
-     name : 'Skills',
-     link : '/Skills'
-    },
-    {
-     name : 'Work',
-     link : '/Work'
-    },
-    {
-     name : 'Contact',
-     link : '/Contact'
-    },
- ]
   return (
     <div className={style.bigContainer}>
       <div className={style.title}>
@@ -314,25 +291,6 @@ export default function Skills() {
             </div>
           </CustomTabPanel>
       </Box>
-      {/* //////////////////// */}
-      <div className={`${style.containerFooter}`}>
-        <div className={style.logoContainer}>
-            <Link href='/'>
-              <Image
-                src={logo}
-                alt ="Logo MG"
-                className={style.logo}
-              />
-            </Link>
-          </div>
-          <div className={style.items}>
-            {linksArray.map(({ name, link }) => (
-              <Link key={name} href={link} className={style.item}>
-                {name}
-              </Link>
-            ))}
-          </div>
-      </div>
     </div>
   );
 }

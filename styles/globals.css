@@ -34,24 +34,23 @@
     #00000080
   );
 
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
-
   /* /////////////////////Colors variabels////////////////// */
   /* Main colors */
+  --main--text--color:#0F0F0F;
   --main--gray:#95afc0;
-  --white:#fff;
-  --black:#000;
+  --whiteBlack--text--color:#000;
   --dark--gray:#0F0F0F;
   --body:#0f0f0f;
+  --reverse--color:#BCBCBC;
   /* Navbar */
   --active--color:#68abd8;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --whiteBlack--text--color:#ffffff;
+    --main--text--color:#BCBCBC;
+    --reverse--color:#0F0F0F;
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: #0F0F0F;
     --background-end-rgb: #0F0F0F;

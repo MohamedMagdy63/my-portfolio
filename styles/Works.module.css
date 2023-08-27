@@ -31,7 +31,7 @@
     margin-left: 7.5vw;
 }
 .container .summery h1 .star{
-    color: #BCBCBC;
+    color: var(--main--text--color);
     opacity: 0.3;
 }
 .container .project1 {
@@ -177,7 +177,7 @@
 }
 .container .containerFooter .items{
     text-align: center;
-    color: #BCBCBC;
+    color: var(--main--text--color);
     font-family: Arial, sans-serif;
     font-size: 18px;
 }

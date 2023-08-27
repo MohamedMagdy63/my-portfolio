@@ -1,6 +1,6 @@
 .bigContainer{
     width: 100%;
-    height: 120vh;
+    height: fit-content;
 }
 .title{
     margin: 2vh 0 0 42.5vw;
@@ -10,7 +10,7 @@
 .title p{
     padding: 2vh;
     font-size: 1.2rem;
-    color: #BCBCBC;
+    color: var(--main--text--color);
 }
 .title h1{
     margin-left: -35px;
@@ -24,7 +24,7 @@
     width: 21vw;
     height: 10vh;
     font-size: 1.3rem;
-    color: #ffffff;
+    color: var(--whiteBlack--text--color);
     text-transform: capitalize;
 }
 .edu .container .component .partV{
@@ -145,13 +145,13 @@
     z-index: -1; /* Place the shadow behind the box */
 }
 .edu .containerPlus:hover .component .circle {
-    background-color: #BCBCBC;
+    background-color: var(--main--text--color);
 }
 .data{
     width: 80%;
     height: 80%;
     margin: 6% 10%;
-    color: #BCBCBC;
+    color: var(--main--text--color);
     font-family: Arial, sans-serif;
     letter-spacing: 0.3px;
 }
@@ -163,7 +163,7 @@
     margin-top: 3vh;
 }
 .edu .container:hover .component .circle {
-    background-color: #BCBCBC;
+    background-color: var(--main--text--color);
 }
 .edu .container2 .component .circle{
     position: absolute;
@@ -215,7 +215,7 @@
 }
 
 .edu .container2:hover .component .circle {
-    background-color: #BCBCBC;
+    background-color: var(--main--text--color);
 }
 
 
@@ -280,7 +280,7 @@
 }
 
 .edu .container3:hover .component .circle {
-    background-color: #BCBCBC;
+    background-color: var(--main--text--color);
 }
 
 
@@ -314,6 +314,9 @@
     background-color: #5a57572b;
     border: 3px solid rgba(255, 255, 255, 0.091);
 }
+.edu{
+    height: 90vh;
+}
 .edu .container3Plus .component .partH{
     position: absolute;
     top: 45.3vh;
@@ -345,7 +348,7 @@
 }
 
 .edu .container3Plus:hover .component .circle {
-    background-color: #BCBCBC;
+    background-color: var(--main--text--color);
 }
 /* //////////////// */
 
@@ -400,7 +403,7 @@
 }
 
 .edu .container4:hover .component .circle {
-    background-color: #BCBCBC;
+    background-color: var(--main--text--color);
 }
 /* /////////////// */
 .grid{
@@ -425,7 +428,7 @@
 }
 .grid h1{
     margin: 2vh;
-    color: #BCBCBC;
+    color: var(--main--text--color);
 }
 .grid  .line{
     margin: 1.5vh 0 1.5vh 2vh;
@@ -471,32 +474,7 @@
 	transform: scale(1.1);
     transition: 1s all ease;
 }
-.containerFooter{
-    position: absolute;
-    padding-bottom: 2vh;
-    top: 140vh;
-    width: 100%;
-    height: fit-content;
-}
-.containerFooter .logoContainer{
-    text-align: center;
-}
-.containerFooter .logoContainer .logo{
-    width: 20vw;
-    height: 30vh;
-}
-.containerFooter .items{
-    text-align: center;
-}
-.containerFooter .items{
-    text-align: center;
-    color: #BCBCBC;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-}
-.containerFooter .items .item{
-    margin: 2%;
-}
+
 @media (max-width:1395px) {
     .edu .container .box{
         width: 36vw;
@@ -660,9 +638,7 @@
     .certifcate .box{
         width: 40vw;
     }
-    .containerFooter{
-        top: 230vh;
-    }
+    
 }
 @media (max-width:900px) {
     .title{
@@ -836,9 +812,7 @@
     .certifcate .box .imgBox{
         margin: 6% 8%;
     }
-    .containerFooter{
-        top: 250vh;
-    }
+    
 }
 @media (max-width:415px) {
     .title{
@@ -979,12 +953,5 @@
     }
     .certifcate .box .imgBox{
         margin:  8%;
-    }
-    .containerFooter{
-        top: 270vh;
-    }
-    .containerFooter .logoContainer .logo{
-        width: 60vw;
-        height: 30vh;
     }
 }

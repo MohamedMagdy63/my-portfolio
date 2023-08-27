@@ -3,13 +3,10 @@ import style from "../styles/Navbar.module.css"
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import * as Icons2 from "react-icons/fa";
-import * as Icons3 from "react-icons/md";
-import * as Icons4 from "react-icons/bs";
 import logo from "../Images/Logo/logo.png";
 import Image from 'next/image';
 export default function Navbar() {
     const [windowWidth, setWindowWidth] = useState(null);
-    const [changeMode, setChangeMode] = useState(false);
     const [sidebar, setSidebar] = useState(false);
     useEffect(() => {
         const updateWindowWidth = () => {
@@ -27,12 +24,6 @@ export default function Navbar() {
           };
 
     }, []);
-    const handleChange = ()=>{
-      setChangeMode(true)
-    }
-    const handleReChange = ()=>{
-      setChangeMode(false)
-    }
     const router = useRouter();
     const linksArray =[
        {
@@ -83,19 +74,6 @@ export default function Navbar() {
                 onClick={() => setSidebar(!sidebar)}
               />
             )
-          }
-          
-          {
-            changeMode === false ? 
-              <Icons4.BsFillLightningChargeFill 
-                className={style.lightIcon}
-                onClick={handleChange}
-              />
-            :
-              <Icons3.MdNightlight 
-                className={style.darkIcon}
-                onClick={handleReChange}
-              />
           }
         </div>
         <div className={style.logoContainer}>

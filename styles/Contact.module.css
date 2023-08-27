@@ -38,7 +38,7 @@
 }
 .container .infoBox .dataBox .right .line{
     text-transform: uppercase;
-    color: #BCBCBC;
+    color: var(--main--text--color);
 }
 .container .infoBox .dataBox .right .data{
     margin-top: 10px;
@@ -151,7 +151,7 @@
 }
 .containerFooter .items{
     text-align: center;
-    color: #BCBCBC;
+    color: var(--main--text--color);
     font-family: Arial, sans-serif;
     font-size: 18px;
 }
@@ -202,6 +202,11 @@
     .container .mailBox{
         margin: 5%  ;
     }
+    .containerFooter{
+        position: absolute;
+        padding-bottom: 2vh;
+        top: 180vh;
+    }
 }
 @media (max-width:620px) {
     .container .infoBox{
@@ -224,7 +229,7 @@
         margin: 16% 0 0 5%;
     }
     .container .infoBox .dataBox .right{
-        left: 18vw;
+        left: 25vw;
     }
     .container .socialData .iconBox{
         width: 90%;

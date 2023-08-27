@@ -60,7 +60,7 @@
     margin-bottom: 3px;
 }
 .container .summery h1 .star{
-    color: #BCBCBC;
+    color: var(--main--text--color);
     opacity: 0.3;
 }
 .container .main {
@@ -95,7 +95,7 @@
 }
 .container .main .data p{
     margin-top: 1vh;
-    color: #BCBCBC;
+    color: var(--main--text--color);
 }
 .container .edu{
     position: absolute;
@@ -116,7 +116,7 @@
     margin-bottom: 5vh;
 }
 .dataBox span{
-    color: #BCBCBC;
+    color: var(--main--text--color);
 }
 .dataBox p{
     margin-top: 0.5vh;
@@ -125,7 +125,7 @@
 .dataBox .desc{
     margin-top: 1.5vh;
     font-size: 1.2rem;
-    color: #BCBCBC;
+    color: var(--main--text--color);
     margin-bottom: 5vh;
 }
 .container .exp{
@@ -192,7 +192,7 @@
 }
 .container .accounts .desc p{
     text-transform:uppercase;
-    color: #BCBCBC;
+    color: var(--main--text--color);
     opacity: 0.7;
     font-size: 14px;
     letter-spacing: 0.3px;
@@ -279,7 +279,7 @@
 }
 .container .moreAbout .dataBox p{
     text-transform:uppercase;
-    color: #BCBCBC;
+    color: var(--main--text--color);
     opacity: 0.7;
     margin-top: 4vh;
     font-size: 14px;
@@ -320,7 +320,7 @@
 }
 .container .containerFooter .items{
     text-align: center;
-    color: #BCBCBC;
+    color: var(--main--text--color);
     font-family: Arial, sans-serif;
     font-size: 18px;
 }

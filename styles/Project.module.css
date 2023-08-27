@@ -6,7 +6,7 @@
     letter-spacing: 0.6px;
 }
 .container .title .star{
-    color: #BCBCBC;
+   color: var(--main--text--color);
     opacity: 0.3;
 }
 .container .mainImage{
@@ -74,7 +74,7 @@
     font-family: Arial, sans-serif;
 }
 .color{
-    color: #BCBCBC;
+   color: var(--main--text--color);
     opacity: 0.7;
 }
 .container .box .rightBox{
@@ -85,7 +85,7 @@
     padding: 6vh 2vw;
     font-size: 1.3rem;
     font-family: Arial, sans-serif;
-    color: #BCBCBC;
+   color: var(--main--text--color);
     opacity: 0.7;
     font-weight:500;
 }
@@ -136,7 +136,7 @@
 }
 .containerFooter .items{
     text-align: center;
-    color: #BCBCBC;
+   color: var(--main--text--color);
     font-family: Arial, sans-serif;
     font-size: 18px;
 }

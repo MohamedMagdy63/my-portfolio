@@ -56,7 +56,7 @@
 }
 .container .startBox  .dataContainer .title{
     text-transform:uppercase;
-    color: #BCBCBC;
+    color: var(--main--text--color);
     opacity: 0.7;
     font-size: 14px;
     letter-spacing: 0.3px;
@@ -69,7 +69,7 @@
 }
 .container .startBox .dataContainer .desc{
     margin: 17% 3.5px 0 0;
-    color: #BCBCBC;
+    color: var(--main--text--color);
 }
 .container .startBox .dataContainer .arrow{
     margin-left: 68%;
@@ -105,7 +105,7 @@
 }
 .container .moreAbout .dataBox p{
     text-transform:uppercase;
-    color: #BCBCBC;
+    color: var(--main--text--color);
     opacity: 0.7;
     font-size: 14px;
     letter-spacing: 0.3px;
@@ -150,7 +150,7 @@
 }
 .container .projects .dataBox p{
     text-transform:uppercase;
-    color: #BCBCBC;
+    color: var(--main--text--color);
     opacity: 0.7;
     font-size: 14px;
     letter-spacing: 0.3px;
@@ -184,7 +184,7 @@
     white-space: nowrap;
     font-family: Arial, sans-serif;
     font-weight: 300;
-    color: #BCBCBC;
+    color: var(--main--text--color);
     letter-spacing: 0.3px;
     margin-bottom: 3px;
 }
@@ -284,7 +284,7 @@
 }
 .container .accounts .desc p{
     text-transform:uppercase;
-    color: #BCBCBC;
+    color: var(--main--text--color);
     opacity: 0.7;
     font-size: 14px;
     letter-spacing: 0.3px;
@@ -330,7 +330,7 @@
 }
 .container .services .down p{
     text-transform:uppercase;
-    color: #BCBCBC;
+    color: var(--main--text--color);
     opacity: 0.7;
     font-size: 14px;
     letter-spacing: 0.3px;
@@ -412,7 +412,7 @@
 }
 .container .containerFooter .items{
     text-align: center;
-    color: #BCBCBC;
+    color: var(--main--text--color);
     font-family: Arial, sans-serif;
     font-size: 18px;
 }

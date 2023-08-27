@@ -42,28 +42,12 @@
     transition: transform .3s ease-in-out;
 } 
 .container .items .notclicked{
-    color: var(--white);  
+    color: var(--whiteBlack--text--color);
 }
 .container .items .icon{
     position: absolute;
     right: 1%;
     font-size: 2.5rem;
-}
-.container .items .lightIcon{
-    position: absolute;
-    right: 8%;
-    top: 20px;
-    color: var(---white);
-    font-size: 2rem;
-    cursor: pointer;
-}
-.container .items .darkIcon{
-    position: absolute;
-    right: 8%;
-    top: 20px;
-    color: var(--dark--gray);
-    font-size:2rem;
-    cursor: pointer;
 }
 .container .notActiveSideBar{
     width: 100px;
@@ -84,7 +68,7 @@
     list-style-type: none;
     transition: 0.5s all ease-in;
     z-index: 999;
-    background-color:var(--body);
+    background-color:var(--reverse--color);
 }
 .sidebar  li{
     list-style-type: none;
