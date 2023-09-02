@@ -142,7 +142,7 @@ export default function Contact (){
                     {
                         socialData.map((item,index)=>(
                             <div className={style.iconBox} key={item.id}>
-                                <Link href={item.link} className={style.linkIcon}>{item.icon}</Link>
+                                <Link href={item.link} target='_blank' className={style.linkIcon}>{item.icon}</Link>
                             </div>
                         ))
                     }

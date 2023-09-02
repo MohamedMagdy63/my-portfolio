@@ -91,8 +91,8 @@ export default function About() {
         <div className={ `${style.accounts}`}>
         <div className={style.box}>
           <ul className={style.items}>
-            <li className={style.item}><Link href='https://github.com/MohamedMagdy63'><Icon2.FiGithub className={style.icon}/></Link></li>
-            <li className={style.item}><Link href='https://www.linkedin.com/in/mohamed-magdy-0a305924a/'><Icon3.FaLinkedinIn className={style.icon}/></Link></li>
+            <li className={style.item}><Link href='https://github.com/MohamedMagdy63' target='_blank'><Icon2.FiGithub className={style.icon}/></Link></li>
+            <li className={style.item}><Link href='https://www.linkedin.com/in/mohamed-magdy-0a305924a/' target='_blank'><Icon3.FaLinkedinIn className={style.icon}/></Link></li>
           </ul>
         </div>
         <Link href='/Contact'>
