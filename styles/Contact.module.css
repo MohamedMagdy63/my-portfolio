@@ -226,7 +226,7 @@
 }
 @media (max-width:415px) {
     .container .infoBox{
-        margin: 16% 0 0 5%;
+        margin: 16% 0 0 1%;
     }
     .container .infoBox .dataBox .right{
         left: 25vw;
@@ -238,7 +238,7 @@
         margin: 5%  ;
     }
     .containerFooter{
-        top: 150vh;
+        top: 160vh;
     }
     .containerFooter .logoContainer .logo{
         width: 60vw;

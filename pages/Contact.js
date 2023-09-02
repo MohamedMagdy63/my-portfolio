@@ -18,6 +18,11 @@ export default function Contact (){
     const [validSubject , setValidSubject] =useState()
     const [validMessage , setValidMessage] =useState()
     const [validSubmit , setValidSubmit] =useState()
+
+
+    const [loading, setLoading] = useState(false);
+
+
     const ContactData =[
         {
             id : 1,
@@ -57,37 +62,39 @@ export default function Contact (){
     ]
     const handleSubmit = async (event) => {
         event.preventDefault()
+        setLoading(true);
         name === '' ? setValidName(true) : setValidName(false)
         email === '' ? setValidMail(true) : setValidMail(false)
         subject === '' ? setValidSubject(true) : setValidSubject(false)
         message === '' ? setValidMessage(true) : setValidMessage(false )
         validMail || validName || validMessage || validSubject ===true ? setValidSubmit(true) : setValidSubmit(false)
         const data = {
-            name
-            ,email
-            ,subject
-            ,message
+            name,
+			email,
+            subject,
+			message,
         }
-        // Send the data to the server in JSON format.
-        const JSONdata = JSON.stringify(data)
-        // API endpoint where we send form data.
-        const endpoint = '/api/form'
-        // Form the request for sending data to the server.
-        const options = {
-          // The method is POST because we are sending data.
-          method: 'POST',
-          // Tell the server we're sending JSON.
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          // Body of the request is the JSON data we created above.
-          body: JSONdata,
-        }
-        // Send the form data to our forms API on Vercel and get a response.
-        const response = await fetch(endpoint, options)
-        // Get the response data from server as JSON.
-        // If server returns the name submitted, that means the form works.
-        const result = await response.json()
+        console.log(data)
+        const response = await fetch("/api/form", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(data),
+		});
+        if (response.ok) {
+			console.log("Message sent successfully");
+			setLoading(false);
+			// reset the form
+			event.target.name.value = "";
+			event.target.email.value = "";
+            event.target.subject.value = "";
+			event.target.message.value = "";
+		}
+		if (!response.ok) {
+			console.log("Error sending message");
+			setLoading(false);
+		}
       }
       const linksArray =[
         {
@@ -143,23 +150,32 @@ export default function Contact (){
             </div>
             <div className={style.mailBox}>
                 <p>Let's work <span>together.</span></p>
-                <form className={style.formBox}  action="/api/form" method="post">
-                    <input placeholder='Name *'  id='first' className={`${style.commonStyle}`} onChange={(e)=>{setName(e.target.value)}} required type='text'></input>
+                <form className={style.formBox}  onSubmit={handleSubmit}>
+                    <input placeholder='Name *'  id='name' className={`${style.commonStyle}`} onChange={(e)=>{setName(e.target.value)}} required type='text'></input>
                     {
                         validName === true ? <p className={style.error}>please fill this field</p> : ''
                     }
                     <br></br>
-                    <input placeholder='Email *' id='last' className={`${style.commonStyle}`} onChange={(e)=>{setEmail(e.target.value)}}></input>
+                    <input placeholder='Email *' id='email' className={`${style.commonStyle}`} onChange={(e)=>{setEmail(e.target.value)}}></input>
                     {
                         validMail === true ? <p className={style.error}>please fill this field</p> : ''
                     }
                     <br></br>
-                    <input placeholder='Your Subject *' className={`${style.commonStyle}`} onChange={(e)=>{setSubject(e.target.value)}}></input>
+                    <input placeholder='Your Subject *' id='subject' className={`${style.commonStyle}`} onChange={(e)=>{setSubject(e.target.value)}}></input>
                     {
                         validSubject === true ? <p className={style.error}>please fill this field</p> : ''
                     }
                     <br></br>
-                    <textarea placeholder='Your Message *' className={`${style.data } ${style.commonStyle}`} onChange={(e)=>{setMessage(e.target.value)}}></textarea>
+                    <textarea placeholder='Your Message *'
+                    rows={4}
+					required
+					minLength={10}
+					maxLength={500}
+                    id='message'
+                    className={`${style.data } 
+                    ${style.commonStyle}`} 
+                    onChange={(e)=>{setMessage(e.target.value)}}
+                    ></textarea>
                     {
                         validMessage === true ? <p className={style.error}>please fill this field</p> : ''
                     }

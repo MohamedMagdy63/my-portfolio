@@ -12,7 +12,7 @@
 .container .mainImage{
     width: 100%;
     height: 80vh;
-    background-color: #5a57571d;
+    background-color: #2C5364;
 }
 .container .mainImage .img{
     position: relative;
@@ -245,26 +245,41 @@
     .container .box .leftBox .starLine{
         left: 19.9vw;
     }
+    .container .mainImage .img{
+        object-fit: contain;
+    }
 }
 @media (max-width:500px) {
     .container .box .leftBox .starLine{
         left: 19.5vw;
     }
     .container .box {
-        margin: 2.5vh 0vw;
-        height: 95vh;       
+        height: fit-content;
+        grid-template-columns: auto;
+    }
+    .container .box .leftBox {
+        position: relative;
+        margin:5%;
+        width: 90vw;
+    }
+    .container .box .leftBox .line{
+        left: 75vw;
+    }
+    .container .box .leftBox .starLine{
+        left: 71.7vw;
+    }
+    .container .box .rightBox{
+        margin: 5%;
+        width: 90vw;
     }
 }
 @media (max-width:415px) {
+    .container .box .leftBox .starLine{
+        left: 71vw;
+    }
     .container .title{
         margin: 4vh 0 2vh 5% ;
         font-size: 0.8rem;
-    }
-    .container .box .leftBox{
-        height: 60vh;
-    }
-    .container .box .leftBox .starLine{
-        left: 18.5vw;
     }
     .container .box .leftBox p{
         font-size: 1rem;

@@ -527,56 +527,49 @@
     .container .startBox {
         margin-left: 12%;
         width: 74%;
-        height: 74%; 
+        height: 100%; 
     }
     .container .startBox .imgContainer{
         width: 80%;
-        height:60%;
+        height: 90%;
     }
     .container .startBox .imgContainer .imageBox{
-       margin: 10% 0 50px 25%;
+       margin: 2.5% 0 50px 25%;
     }
     .container .startBox  .dataContainer .title{
-        margin: 120% 0 0 -90%;
+        margin: 350px 0 0 -90%;
     }
     .container .startBox .dataContainer .name{
-        margin: 10% 0 0 -90%;
+        margin: 5% 0 0 -90%;
     }
     .container .startBox .dataContainer .desc{
-        margin: 2% 0 0 -90%;
+        margin: 0 0 0 -90%;
     }
     .container .startBox .dataContainer .arrow{
-        margin: 0 0 0 60%;
+        margin: 0 0 0 45%;
         font-size: 3rem;
         opacity: 0.2;
     }
-    .container .startBox .dataContainer {
-        position: absolute;
-        top: 15%;
-        left: 50%;
-        font-family: Arial, sans-serif;
-        letter-spacing: 0.3px;
-    }
     .container .newSletter{
-        top: 77%;
+        top: 103%;
         left: 12%;
         width: 74%;
         height: 8%;
     }
     .container .moreAbout{
-        top: 88%;
+        top: 114%;
         left: 12%;
         width: 75%;
         height: 42%;
     }
     .container .projects{
-        top: 133%;
+        top: 159%;
         left: 12%;
         width: 75%;
         height: 42%;
     }
     .container .accounts{
-        top: 178%;
+        top: 204%;
         left: 12%;
         width: 75%;
         height: 42%;
@@ -590,13 +583,13 @@
         font-size: 3rem;
     }
     .container .contact{
-        top: 223%;
+        top: 249%;
         left: 12%;
         width: 74%;
         height: 42%;
     }
     .container .services{
-        top: 268%;
+        top: 294%;
         left: 12%;
         width: 75%;
         height: 42%;
@@ -606,7 +599,7 @@
         margin: 30px 0 0 9%;
     }
     .container .containerFooter{
-        margin-top: 200vh;
+        margin-top: 220vh;
     }
    
 }
@@ -624,7 +617,7 @@
        margin: 10% 0 50px 20%;
     }
     .container .startBox  .dataContainer .title{
-        margin: 140% 0 0 -90%;
+        margin: 135% 0 0 -90%;
     }
     .container .startBox .dataContainer .name{
         margin: 10% 0 0 -90%;
