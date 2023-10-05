@@ -112,7 +112,7 @@ export default function Skills() {
               </div>
               <div className={style.box}>
                 <div className={style.data}>
-                  <h3>The Web Development challenger Udacity-track</h3>
+                  <h3>The Web Development Challenger Udacity-track</h3>
                   <span> (7/2022 - 10/2022)</span>
                   <p>Scholarship sponsored by Ministry of Communications and Information Technology powered by itida - Udacity</p>
                   <p>It is a comprehensive and hands-on program designed to teach HTML, CSS, JavaScript, and other relevant technologies, while building a portfolio of web applications that showcase their abilities. </p>
