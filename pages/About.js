@@ -1,53 +1,29 @@
 import style from '../styles/About.module.css'
 import myImg from "../public/7.png"
 import Image from 'next/image';
-import * as Icon0 from 'react-icons/rx'
+import { PiCursorClickLight } from "react-icons/pi";
 import * as Icon1 from 'react-icons/gi'
 import * as Icon2 from 'react-icons/fi'
 import * as Icon3 from 'react-icons/fa'
 import Link from 'next/link';
 import logo from '../public/logo2.png'
-import logo2 from "../Images/Logo/logo.png";
 
 export default function About() {
-  const linksArray =[
-    {
-     name : 'Home',
-     link : '/'
-    },
-    {
-     name : 'About',
-     link : '/About'
-    },
-    {
-     name : 'Skills',
-     link : '/Skills'
-    },
-    {
-     name : 'Work',
-     link : '/Work'
-    },
-    {
-     name : 'Contact',
-     link : '/Contact'
-    },
- ]
   return (
     <div className={style.container}>
         <div className={`${style.startBox}  ${style.boxStyle}`}>
-            <div className={style.imgContainer}>
-                <div className={style.imageBox}>
-                <Image src={myImg} className={style.myImg} alt="My picture"></Image>
-                </div>
+          <div className={style.imgContainer}>
+            <div className={style.imageBox}>
+            <Image src={myImg} className={style.myImg} alt="My picture"></Image>
             </div>
+          </div>
         </div>
-
         <div className={style.summery}>
-            <h1>
-                <Icon1.GiFlowerStar className={style.star}/>
-                Self-Summery
-                <Icon1.GiFlowerStar className={style.star}/>
-            </h1>
+          <h1>
+            <Icon1.GiFlowerStar className={style.star}/>
+            Self-Summery
+            <Icon1.GiFlowerStar className={style.star}/>
+          </h1>
         </div>
 
         <div className={ `${style.main} ${style.boxStyle}`}>
@@ -99,7 +75,7 @@ export default function About() {
           <div className={style.desc}>
             <p>Stay With me</p>
             <h3>Profiles</h3>
-            <Icon0.RxDoubleArrowRight className={style.arrow}/>
+            <PiCursorClickLight className={style.arrow}/>
           </div>
         </Link>
       </div>
@@ -107,7 +83,7 @@ export default function About() {
         <div className={`${style.contact} ${style.boxStyle} `}>
           <div className={style.line}></div>
           <Icon1.GiFlowerStar className={style.starLine}/>
-          <Icon0.RxDoubleArrowRight className={style.arrow}/>
+          <PiCursorClickLight className={style.arrow}/>
           <p>Let's <br></br>
             work <span>together.</span>
           </p>
@@ -122,29 +98,12 @@ export default function About() {
             <div className={style.dataBox}>
               <p>More about</p>
               <h3>credentials</h3>
-              <Icon0.RxDoubleArrowRight className={style.arrow}/>
+              <PiCursorClickLight className={style.arrow}/>
             </div>
         </div>
       </Link>
       {/* //////////////////// */}
-      <div className={`${style.containerFooter}`}>
-        <div className={style.logoContainer}>
-            <Link href='/'>
-              <Image
-                src={logo2}
-                alt ="Logo MG"
-                className={style.logo}
-              />
-            </Link>
-          </div>
-          <div className={style.items}>
-            {linksArray.map(({ name, link }) => (
-              <Link key={name} href={link} className={style.item}>
-                {name}
-              </Link>
-            ))}
-          </div>
-      </div>
+      
     </div>
   )
 }

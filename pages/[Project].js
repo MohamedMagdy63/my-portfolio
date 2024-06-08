@@ -116,25 +116,6 @@ export default function project() {
     </div>
     : ''
     }
-    {/* //////////////////// */}
-    <div className={`${style.containerFooter}`}>
-        <div className={style.logoContainer}>
-            <Link href='/'>
-              <Image
-                src={logo}
-                alt ="Logo MG"
-                className={style.logo}
-              />
-            </Link>
-          </div>
-          <div className={style.items}>
-            {linksArray.map(({ name, link }) => (
-              <Link key={name} href={link} className={style.item}>
-                {name}
-              </Link>
-            ))}
-          </div>
-      </div>
     </>
   )
 }

@@ -19,10 +19,9 @@ import lastPortfolio from '../Images/WorksPage/lastPortfolio.png'
 import lastPortfolio2 from '../Images/WorksPage/lastPortfolio2.png'
 import mock from '../Images/WorksPage/mock1.png'
 import mock2 from '../Images/WorksPage/mock2.png'
-import * as Icon0 from 'react-icons/rx'
+import { PiCursorClickLight } from "react-icons/pi";
 import { useState } from 'react';
 import Link from 'next/link';
-import logo from "../Images/Logo/logo.png";
 
 
 export default function Work() {
@@ -51,28 +50,7 @@ export default function Work() {
       [project]: false,
     }));
   };
-  const linksArray =[
-    {
-     name : 'Home',
-     link : '/'
-    },
-    {
-     name : 'About',
-     link : '/About'
-    },
-    {
-     name : 'Skills',
-     link : '/Skills'
-    },
-    {
-     name : 'Work',
-     link : '/Work'
-    },
-    {
-     name : 'Contact',
-     link : '/Contact'
-    },
-  ]
+  
   return (
     <div className={style.container}>
       <div className={`${style.startBox} ${style.boxStyle}`}>
@@ -81,7 +59,7 @@ export default function Work() {
             <Image src={hoverStates.startBox ? Auction  :  Home} className={style.img} alt='AuctionWorld' />
           </div>
           <h3>Auction World</h3>
-          <Icon0.RxDoubleArrowRight className={style.arrow}/>
+          <PiCursorClickLight className={style.arrow}/>
         </Link>
       </div>
       <div className={style.summery}>
@@ -96,7 +74,7 @@ export default function Work() {
         <div className={style.box} onMouseEnter={() => handleMouseEnter('project1')} onMouseLeave={() => handleMouseLeave('project1')}>
           <Image src={hoverStates.project1 ?  Court2 :   Court1 } className={style.img} alt='CourtReservation' />
           <h3>Court Reservation</h3>
-          <Icon0.RxDoubleArrowRight className={style.arrow}/>
+          <PiCursorClickLight className={style.arrow}/>
         </div>
       </Link>
       </div>
@@ -105,7 +83,7 @@ export default function Work() {
         <div className={style.box} onMouseEnter={() => handleMouseEnter('project2')} onMouseLeave={() => handleMouseLeave('project2')}>
         <Image src={hoverStates.project2 ?   Loukma2 :   Loukma} className={style.img} alt='LoukmaCafe'></Image>
         <h3>Loukma Cafe</h3>
-        <Icon0.RxDoubleArrowRight className={style.arrow}/>
+        <PiCursorClickLight className={style.arrow}/>
         </div>
       </Link>
       </div>
@@ -114,7 +92,7 @@ export default function Work() {
         <div className={style.box} onMouseEnter={() => handleMouseEnter('project3')} onMouseLeave={() => handleMouseLeave('project3')}>
         <Image src={hoverStates.project3 ?   WowCat :   Wow} className={style.img} alt='WowRestaurant'></Image>
         <h3>Wow Restaurant</h3>
-        <Icon0.RxDoubleArrowRight className={style.arrow}/>
+        <PiCursorClickLight className={style.arrow}/>
         </div>
       </Link>
       </div>
@@ -124,7 +102,7 @@ export default function Work() {
         <div className={style.box} onMouseEnter={() => handleMouseEnter('project4')} onMouseLeave={() => handleMouseLeave('project4')}>
         <Image src={hoverStates.project4 ? lastPortfolio2 :   lastPortfolio} className={style.img} alt='FirstPortfolio'></Image>
         <h3>My last portfolio</h3>
-        <Icon0.RxDoubleArrowRight className={style.arrow}/>
+        <PiCursorClickLight className={style.arrow}/>
         </div>
       </Link>
         
@@ -134,7 +112,7 @@ export default function Work() {
         <div className={style.box} onMouseEnter={() => handleMouseEnter('project5')} onMouseLeave={() => handleMouseLeave('project5')}>
           <Image src={hoverStates.project5 ?  SeaHorse :   SeaH} className={style.img} alt='SeahorseGame'></Image>
           <h3>Seahorse Game</h3>
-          <Icon0.RxDoubleArrowRight className={style.arrow}/>
+          <PiCursorClickLight className={style.arrow}/>
         </div>
       </Link>
       </div>
@@ -143,7 +121,7 @@ export default function Work() {
         <div className={style.box} onMouseEnter={() => handleMouseEnter('project6')} onMouseLeave={() => handleMouseLeave('project6')}>
           <Image src={hoverStates.project6 ? ToolBox2 : ToolBox } className={style.img} alt='Tool box'></Image>
           <h3>Tool Box</h3>
-          <Icon0.RxDoubleArrowRight className={style.arrow}/>
+          <PiCursorClickLight className={style.arrow}/>
         </div>
       </Link> 
       </div>
@@ -152,7 +130,7 @@ export default function Work() {
           <div className={style.box} onMouseEnter={() => handleMouseEnter('project7')} onMouseLeave={() => handleMouseLeave('project7')}>
             <Image src={hoverStates.project7 ? Mario :   mario  } className={style.img} alt='SuperMario Model'></Image>
             <h3>SuperMario Model</h3>
-            <Icon0.RxDoubleArrowRight className={style.arrow}/>
+            <PiCursorClickLight className={style.arrow}/>
           </div>
         </Link>
       </div>
@@ -161,29 +139,11 @@ export default function Work() {
         <div className={style.box} onMouseEnter={() => handleMouseEnter('project8')} onMouseLeave={() => handleMouseLeave('project8')}>
           <Image src={hoverStates.project8 ?  mock2 :   mock} className={style.img} alt='Hit mock game'></Image>
           <h3>Hit mock game</h3>
-          <Icon0.RxDoubleArrowRight className={style.arrow}/>
+          <PiCursorClickLight className={style.arrow}/>
         </div>
       </Link>
       </div>
-      {/* //////////////////// */}
-      <div className={`${style.containerFooter}`}>
-        <div className={style.logoContainer}>
-            <Link href='/'>
-              <Image
-                src={logo}
-                alt ="Logo MG"
-                className={style.logo}
-              />
-            </Link>
-          </div>
-          <div className={style.items}>
-            {linksArray.map(({ name, link }) => (
-              <Link key={name} href={link} className={style.item}>
-                {name}
-              </Link>
-            ))}
-          </div>
-      </div>
+      
     </div>
   )
 }

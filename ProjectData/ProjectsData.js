@@ -72,14 +72,14 @@ import SkillsFP from '../Images/FirstPortofolio/Skills.png'
 
 // SeaHorse Game
 
-import Seahorse from '../Images/WorksPage/Seahorse2.png'
+import Seahorse from '../Images/WorksPage/Seahorse.gif'
 
 // ToolBox
 
 import ToolBox2 from '../Images/WorksPage/ToolBox2.png'
 
 // mario
-import mario from '../Images/WorksPage/Mario2.png'
+import mario from '../Images/WorksPage/Mario.gif'
 
 // mock
 import mock from '../Images/WorksPage/mock2.png'

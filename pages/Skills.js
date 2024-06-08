@@ -7,10 +7,14 @@ import style from "../styles/Skills.module.css";
 import ProgressBar from "@ramonak/react-progress-bar";
 import Link from 'next/link';
 import Cisco from "../public/Cisco.png"
+import ciscoLetter from "../public/ciscoLetter.png"
+
 import Udacity1 from "../public/udacity-1.png"
 import Udacity2 from "../public/udacity-2.png"
 import Amit from "../public/Amit.png"
 import GreatLearning from "../public/GreatLearning.jpg"
+import AmazonKnet from "../public/AmazonKnet.png"
+
 import Image from 'next/image';
 import * as Icon1 from 'react-icons/bs'
 import * as Icon2 from 'react-icons/tb'
@@ -72,7 +76,7 @@ export default function Skills() {
   return (
     <div className={style.bigContainer}>
       <div className={style.title}>
-          <p>Fresh graduate 2023</p>
+          <p>I graduated 2023</p>
           <h1>My Resume</h1>
       </div>
       <Box sx={{ width: '100%', scrollBehavior: 'none', overflow: 'hidden'}} >
@@ -173,14 +177,16 @@ export default function Skills() {
               <p>Node.js</p>
               <ProgressBar className={style.line} completed={85} baseBgColor='#5a57572b' bgColor = "#4A55A2" animateOnRender = {true} />
               <p>Next.js</p>
+              <ProgressBar className={style.line} completed={80} baseBgColor='#5a57572b' bgColor = "#4A55A2" animateOnRender = {true} />
+              <p>MongoDB</p>
+              <ProgressBar className={style.line} completed={80} baseBgColor='#5a57572b' bgColor = "#4A55A2" animateOnRender = {true} />
+              <p>MongoDB</p>
               <ProgressBar className={style.line} completed={80} baseBgColor='#5a57572b' bgColor = "#7895CB" animateOnRender = {true} />
               <p>PHP</p>
+              <ProgressBar className={style.line} completed={80} baseBgColor='#5a57572b' bgColor = "#7895CB" animateOnRender = {true} />
+              <p>PHP Laravel</p>
               <ProgressBar className={style.line} completed={70} baseBgColor='#5a57572b' bgColor = "#A0BFE0" animateOnRender = {true} />
               <p>SQL</p>
-              <ProgressBar className={style.line} completed={70} baseBgColor='#5a57572b' bgColor = "#C5DFF8" animateOnRender = {true} />
-              <p>C</p>
-              <ProgressBar className={style.line} completed={70} baseBgColor='#5a57572b' bgColor = "#4A55A2" animateOnRender = {true} />
-              <p>C++</p>
               <ProgressBar className={style.line} completed={75} baseBgColor='#5a57572b' bgColor = "#7895CB" animateOnRender = {true} />
               <p>Python</p>
               <ProgressBar className={style.line} completed={98} baseBgColor='#5a57572b' bgColor = "#A0BFE0" animateOnRender = {true} />
@@ -223,10 +229,9 @@ export default function Skills() {
               </div>
               <div className={style.box}>
                 <div className={style.data}>
-                  <h3>Auction World (My graduation project) </h3>
-                  <span> (2022 - 2023)</span>
-                  <p>Represents a cutting-edge platform crafted using the latest technologies including React.js, Node.js, and an Oracle database. This innovative system is meticulously designed to offer a robust backend, catering to three distinct selling approaches: instant selling, live auctions, and scheduled auctions. Its user-friendly interface ensures seamless navigation, while its responsive design guarantees a smooth user experience across various devices, including mobile phones.</p>
-                  <p></p>
+                  <h3>Customer Service Associate </h3>
+                  <span> (11/2023 - 4/2024)</span>
+                  <p>I work in a bilingual account (English and Arabic), handling customer issues in Saudi Arabia. My role involves listening, understanding, checking, and resolving issues promptly. Additionally, I contributed to developing web tools to facilitate chat handling, gaining valuable experience in the process.</p>
                 </div>
               </div>
             </div>
@@ -241,9 +246,9 @@ export default function Skills() {
               <div className={style.box}>
                 <div className={style.data}>
                   <h3>Freelance Web Developer </h3>
-                  <span> (2019 - 2021)</span>
-                  <p>I've had the opportunity to work on a diverse range of projects, honing my skills in creating responsive and visually appealing websites. My experience has allowed me to collaborate closely with clients, turning their ideas into functional and user-friendly online platforms.</p>
-                  <p></p>
+                  <span> (2019 - Till now )</span>
+                  <p>I've had the opportunity to work on a diverse range of projects, honing my skills in creating responsive and visually appealing websites. My experience has allowed me to collaborate closely with clients, turning their ideas into functional and user-friendly online platforms.
+                  I successfully co-founded a company with my friend, dedicated to developing and creating websites. Our work is driving significant innovation and transformation in the web development field.</p>
                 </div>
               </div>
             </div>
@@ -251,22 +256,29 @@ export default function Skills() {
           </CustomTabPanel>
           <CustomTabPanel value={value} index={3}>
             <div className={style.certifcate}>
-              <div className={style.box}>
-                <Link href='https://drive.google.com/file/d/1ztHuE0Lbn_Fs6YFnIcBeP_H0pk7yVHEh/view?usp=sharing'>
-                  <div className={style.imgBox}>
-                    <Image src={Cisco} className={style.img} alt='Cisco Certificate'></Image>
-                  </div>
-                </Link>
-              </div>
-              <div className={style.box}>
-                <Link href='https://graduation.udacity.com/confirm/PNDCTALA'>
+            <div className={style.box}>
+                <Link href='https://graduation.udacity.com/confirm/PNDCTALA' target='_blank'>
                   <div className={style.imgBox}>
                     <Image src={Udacity1} className={style.img} alt='Udacity Certificate'></Image>
                   </div>
                 </Link>
               </div>
               <div className={style.box}>
-              <Link href='https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/6fcfe601-f009-486c-9cf5-f9532c3e269a.pdf'>
+                <Link href='https://drive.google.com/file/d/1ztHuE0Lbn_Fs6YFnIcBeP_H0pk7yVHEh/view?usp=sharing' target='_blank'>
+                  <div className={style.imgBox}>
+                    <Image src={Cisco} className={style.img} alt='Cisco Certificate'></Image>
+                  </div>
+                </Link>
+              </div>
+              <div className={style.box}>
+                <Link href='https://drive.google.com/file/d/1WHdi0HlvL2NVMtp3i6divZDicqDvULNW/view?usp=sharing' target='_blank'>
+                  <div className={style.imgBox}>
+                    <Image src={ciscoLetter} className={style.img} alt='Cisco Certificate'></Image>
+                  </div>
+                </Link>
+              </div>
+              <div className={style.box}>
+              <Link href='https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/6fcfe601-f009-486c-9cf5-f9532c3e269a.pdf' target='_blank'>
                   <div className={style.imgBox}>
                     <Image src={Udacity2} className={style.img} alt='Udacity Certificate'></Image>
                   </div>
@@ -275,19 +287,23 @@ export default function Skills() {
               <div className={style.box}>
               <Link href='https://drive.google.com/file/d/1ZrGTkb2rXhGytzhDwDkK-9EmtAX-rfNp/view'>
                   <div className={style.imgBox}>
-                    <Image src={Amit} className={style.img} alt='Cisco Certificate'></Image>
+                    <Image src={Amit} className={style.img} alt='Cisco Certificate Letter'></Image>
                   </div>
                 </Link>
               </div>
               
               <div className={style.box}>
-              <Link href='https://drive.google.com/file/d/1lnekiJvLDX8_cN7vCd2M8mhaG1OprMmv/view?usp=sharing'>
+              <Link href='https://drive.google.com/file/d/1lnekiJvLDX8_cN7vCd2M8mhaG1OprMmv/view?usp=sharing'  target='_blank'>
                   <div className={style.imgBox}>
-                    <Image src={GreatLearning} className={style.img} alt='Cisco Certificate'></Image>
+                    <Image src={GreatLearning} className={style.img} alt='GreatLearning JavaScript'></Image>
                   </div>
                 </Link>
               </div>
-              
+              <div className={style.box}>
+                <div className={style.imgBox}>
+                  <Image src={AmazonKnet} className={style.img} alt='AmazonKnet javaScript'></Image>
+                </div>
+              </div>
             </div>
           </CustomTabPanel>
       </Box>

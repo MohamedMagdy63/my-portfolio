@@ -400,6 +400,7 @@
     height: fit-content;
 }
 .container .containerFooter .logoContainer{
+    position: relative;
     text-align: center;
 }
 .container .containerFooter .logoContainer .logo{

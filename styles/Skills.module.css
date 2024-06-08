@@ -1,4 +1,5 @@
 .bigContainer{
+    padding-top: 10vh;
     width: 100%;
     height: fit-content;
 }
@@ -773,7 +774,7 @@
     .edu .container3Plus .component .linePlus{
         top: 113.5vh;
         left: 8vw;
-        height: 40vh;
+        height: 65vh;
     }
     .edu .containerPlus .component .partH{
         left: 9.5vw;
@@ -788,6 +789,7 @@
         top: 105vh;
         left: 12.5vw;
         width: 79vw;
+        height: 65vh;
     }
     .grid{
         display: grid;
@@ -932,7 +934,7 @@
     .edu .container3Plus .component .linePlus{
         top: 120.5vh;
         left: 8vw;
-        height: 40vh;
+        height: 65vh;
     }
     .edu .containerPlus .component .partH{
         left: 10.5vw;
@@ -947,6 +949,7 @@
         top: 112.5vh;
         left: 12.5vw;
         width: 79vw;
+        height: 65vh;
     }
     .certifcate .box{
         width: 90vw;

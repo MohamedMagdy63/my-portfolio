@@ -96,28 +96,7 @@ export default function Contact (){
 			setLoading(false);
 		}
       }
-      const linksArray =[
-        {
-         name : 'Home',
-         link : '/'
-        },
-        {
-         name : 'About',
-         link : '/About'
-        },
-        {
-         name : 'Skills',
-         link : '/Skills'
-        },
-        {
-         name : 'Work',
-         link : '/Work'
-        },
-        {
-         name : 'Contact',
-         link : '/Contact'
-        },
-     ]
+      
     return(
         <div className={style.container}>
             <div className={style.infoBox}>
@@ -185,25 +164,6 @@ export default function Contact (){
                         <p className={style.errorMassage}>One or more fields have an error. Please check it</p> : ''
                     }
                 </form>
-            </div>
-            {/* ///////////////// */}
-            <div className={`${style.containerFooter}`}>
-                <div className={style.logoContainer}>
-                    <Link href='/'>
-                    <Image
-                        src={logo}
-                        alt ="Logo MG"
-                        className={style.logo}
-                    />
-                    </Link>
-                </div>
-                <div className={style.items}>
-                    {linksArray.map(({ name, link }) => (
-                    <Link key={name} href={link} className={style.item}>
-                        {name}
-                    </Link>
-                    ))}
-                </div>
             </div>
         </div>
     )
